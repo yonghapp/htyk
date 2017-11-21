@@ -1,0 +1,1018 @@
+@charset "UTF-8";
+/**
+ * @variables
+ */
+/**
+ * 初始化 html root 字体大小
+ */
+/**
+ * VI
+ */
+/**
+ * @functions
+ */
+/**
+ * Convert any unit from px to rem
+ *
+ * @param $size - the value in pixel you want to convert
+ *
+ * e.g. p { width: pxToRem(30px);}
+ *
+ */
+/**
+ * @mixins
+ */
+/**
+ * Convert any unit from px to rem
+ *
+ * @param $size - the value in pixel you want to convert
+ *
+ * e.g. p { width: pxToRem(30px);}
+ *
+ */
+/**
+ * Convert font-size from px to rem with px fallback
+ *
+ * @param $size - the value in pixel you want to convert
+ *
+ * e.g. p {@include fontSize(12px);}
+ *
+ */
+/**
+* 基础组件类
+*/
+ul, ol {
+  list-style: none;
+  padding-left: 0; }
+
+/**
+ * 布局用模块
+ */
+/**
+ * layout 工具库
+ *
+ * 命名规则:
+ * 1. layout- 为布局用工具库的统一前缀标识符
+ * 2. m 和 p 为 CSS 属性标识符, 分别代表 margin 和 padding
+ * 3. w h t r b l 分别代表 width height top right bottom left
+ * 4. 最后一位为数字位, 表示 CSS 属性的值
+ *
+ * 示例:
+ *      layout-m10  {margin: 10rem;}
+ *      layout-mw10  {margin-left:10rem;margin-right:10rem;}
+ *      layout-pr20  {padding-right:20rem;}
+ */
+.layout-m5 {
+  margin: 0.05rem; }
+
+.layout-mw5 {
+  margin-left: 0.05rem;
+  margin-right: 0.05rem; }
+
+.layout-mh5 {
+  margin-top: 0.05rem;
+  margin-bottom: 0.05rem; }
+
+.layout-mt5 {
+  margin-top: 0.05rem; }
+
+.layout-mr5 {
+  margin-right: 0.05rem; }
+
+.layout-mb5 {
+  margin-bottom: 0.05rem; }
+
+.layout-ml5 {
+  margin-left: 0.05rem; }
+
+.layout-p5 {
+  padding: 0.05rem; }
+
+.layout-pw5 {
+  padding-left: 0.05rem;
+  padding-right: 0.05rem; }
+
+.layout-ph5 {
+  padding-top: 0.05rem;
+  padding-bottom: 0.05rem; }
+
+.layout-pt5 {
+  padding-top: 0.05rem; }
+
+.layout-pr5 {
+  padding-right: 0.05rem; }
+
+.layout-pb5 {
+  padding-bottom: 0.05rem; }
+
+.layout-pl5 {
+  padding-left: 0.05rem; }
+
+.layout-m10 {
+  margin: 0.1rem; }
+
+.layout-mw10 {
+  margin-left: 0.1rem;
+  margin-right: 0.1rem; }
+
+.layout-mh10 {
+  margin-top: 0.1rem;
+  margin-bottom: 0.1rem; }
+
+.layout-mt10 {
+  margin-top: 0.1rem; }
+
+.layout-mr10 {
+  margin-right: 0.1rem; }
+
+.layout-mb10 {
+  margin-bottom: 0.1rem; }
+
+.layout-ml10 {
+  margin-left: 0.1rem; }
+
+.layout-p10 {
+  padding: 0.1rem; }
+
+.layout-pw10 {
+  padding-left: 0.1rem;
+  padding-right: 0.1rem; }
+
+.layout-ph10 {
+  padding-top: 0.1rem;
+  padding-bottom: 0.1rem; }
+
+.layout-pt10 {
+  padding-top: 0.1rem; }
+
+.layout-pr10 {
+  padding-right: 0.1rem; }
+
+.layout-pb10 {
+  padding-bottom: 0.1rem; }
+
+.layout-pl10 {
+  padding-left: 0.1rem; }
+
+.layout-m15 {
+  margin: 0.15rem; }
+
+.layout-mw15 {
+  margin-left: 0.15rem;
+  margin-right: 0.15rem; }
+
+.layout-mh15 {
+  margin-top: 0.15rem;
+  margin-bottom: 0.15rem; }
+
+.layout-mt15 {
+  margin-top: 0.15rem; }
+
+.layout-mr15 {
+  margin-right: 0.15rem; }
+
+.layout-mb15 {
+  margin-bottom: 0.15rem; }
+
+.layout-ml15 {
+  margin-left: 0.15rem; }
+
+.layout-p15 {
+  padding: 0.15rem; }
+
+.layout-pw15 {
+  padding-left: 0.15rem;
+  padding-right: 0.15rem; }
+
+.layout-ph15 {
+  padding-top: 0.15rem;
+  padding-bottom: 0.15rem; }
+
+.layout-pt15 {
+  padding-top: 0.15rem; }
+
+.layout-pr15 {
+  padding-right: 0.15rem; }
+
+.layout-pb15 {
+  padding-bottom: 0.15rem; }
+
+.layout-pl15 {
+  padding-left: 0.15rem; }
+
+.layout-m20 {
+  margin: 0.2rem; }
+
+.layout-mw20 {
+  margin-left: 0.2rem;
+  margin-right: 0.2rem; }
+
+.layout-mh20 {
+  margin-top: 0.2rem;
+  margin-bottom: 0.2rem; }
+
+.layout-mt20 {
+  margin-top: 0.2rem; }
+
+.layout-mr20 {
+  margin-right: 0.2rem; }
+
+.layout-mb20 {
+  margin-bottom: 0.2rem; }
+
+.layout-ml20 {
+  margin-left: 0.2rem; }
+
+.layout-p20 {
+  padding: 0.2rem; }
+
+.layout-pw20 {
+  padding-left: 0.2rem;
+  padding-right: 0.2rem; }
+
+.layout-ph20 {
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem; }
+
+.layout-pt20 {
+  padding-top: 0.2rem; }
+
+.layout-pr20 {
+  padding-right: 0.2rem; }
+
+.layout-pb20 {
+  padding-bottom: 0.2rem; }
+
+.layout-pl20 {
+  padding-left: 0.2rem; }
+
+.layout-m25 {
+  margin: 0.25rem; }
+
+.layout-mw25 {
+  margin-left: 0.25rem;
+  margin-right: 0.25rem; }
+
+.layout-mh25 {
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem; }
+
+.layout-mt25 {
+  margin-top: 0.25rem; }
+
+.layout-mr25 {
+  margin-right: 0.25rem; }
+
+.layout-mb25 {
+  margin-bottom: 0.25rem; }
+
+.layout-ml25 {
+  margin-left: 0.25rem; }
+
+.layout-p25 {
+  padding: 0.25rem; }
+
+.layout-pw25 {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem; }
+
+.layout-ph25 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem; }
+
+.layout-pt25 {
+  padding-top: 0.25rem; }
+
+.layout-pr25 {
+  padding-right: 0.25rem; }
+
+.layout-pb25 {
+  padding-bottom: 0.25rem; }
+
+.layout-pl25 {
+  padding-left: 0.25rem; }
+
+.layout-m30 {
+  margin: 0.3rem; }
+
+.layout-mw30 {
+  margin-left: 0.3rem;
+  margin-right: 0.3rem; }
+
+.layout-mh30 {
+  margin-top: 0.3rem;
+  margin-bottom: 0.3rem; }
+
+.layout-mt30 {
+  margin-top: 0.3rem; }
+
+.layout-mr30 {
+  margin-right: 0.3rem; }
+
+.layout-mb30 {
+  margin-bottom: 0.3rem; }
+
+.layout-ml30 {
+  margin-left: 0.3rem; }
+
+.layout-p30 {
+  padding: 0.3rem; }
+
+.layout-pw30 {
+  padding-left: 0.3rem;
+  padding-right: 0.3rem; }
+
+.layout-ph30 {
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem; }
+
+.layout-pt30 {
+  padding-top: 0.3rem; }
+
+.layout-pr30 {
+  padding-right: 0.3rem; }
+
+.layout-pb30 {
+  padding-bottom: 0.3rem; }
+
+.layout-pl30 {
+  padding-left: 0.3rem; }
+
+.layout-m35 {
+  margin: 0.35rem; }
+
+.layout-mw35 {
+  margin-left: 0.35rem;
+  margin-right: 0.35rem; }
+
+.layout-mh35 {
+  margin-top: 0.35rem;
+  margin-bottom: 0.35rem; }
+
+.layout-mt35 {
+  margin-top: 0.35rem; }
+
+.layout-mr35 {
+  margin-right: 0.35rem; }
+
+.layout-mb35 {
+  margin-bottom: 0.35rem; }
+
+.layout-ml35 {
+  margin-left: 0.35rem; }
+
+.layout-p35 {
+  padding: 0.35rem; }
+
+.layout-pw35 {
+  padding-left: 0.35rem;
+  padding-right: 0.35rem; }
+
+.layout-ph35 {
+  padding-top: 0.35rem;
+  padding-bottom: 0.35rem; }
+
+.layout-pt35 {
+  padding-top: 0.35rem; }
+
+.layout-pr35 {
+  padding-right: 0.35rem; }
+
+.layout-pb35 {
+  padding-bottom: 0.35rem; }
+
+.layout-pl35 {
+  padding-left: 0.35rem; }
+
+.layout-m40 {
+  margin: 0.4rem; }
+
+.layout-mw40 {
+  margin-left: 0.4rem;
+  margin-right: 0.4rem; }
+
+.layout-mh40 {
+  margin-top: 0.4rem;
+  margin-bottom: 0.4rem; }
+
+.layout-mt40 {
+  margin-top: 0.4rem; }
+
+.layout-mr40 {
+  margin-right: 0.4rem; }
+
+.layout-mb40 {
+  margin-bottom: 0.4rem; }
+
+.layout-ml40 {
+  margin-left: 0.4rem; }
+
+.layout-p40 {
+  padding: 0.4rem; }
+
+.layout-pw40 {
+  padding-left: 0.4rem;
+  padding-right: 0.4rem; }
+
+.layout-ph40 {
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem; }
+
+.layout-pt40 {
+  padding-top: 0.4rem; }
+
+.layout-pr40 {
+  padding-right: 0.4rem; }
+
+.layout-pb40 {
+  padding-bottom: 0.4rem; }
+
+.layout-pl40 {
+  padding-left: 0.4rem; }
+
+.layout-m45 {
+  margin: 0.45rem; }
+
+.layout-mw45 {
+  margin-left: 0.45rem;
+  margin-right: 0.45rem; }
+
+.layout-mh45 {
+  margin-top: 0.45rem;
+  margin-bottom: 0.45rem; }
+
+.layout-mt45 {
+  margin-top: 0.45rem; }
+
+.layout-mr45 {
+  margin-right: 0.45rem; }
+
+.layout-mb45 {
+  margin-bottom: 0.45rem; }
+
+.layout-ml45 {
+  margin-left: 0.45rem; }
+
+.layout-p45 {
+  padding: 0.45rem; }
+
+.layout-pw45 {
+  padding-left: 0.45rem;
+  padding-right: 0.45rem; }
+
+.layout-ph45 {
+  padding-top: 0.45rem;
+  padding-bottom: 0.45rem; }
+
+.layout-pt45 {
+  padding-top: 0.45rem; }
+
+.layout-pr45 {
+  padding-right: 0.45rem; }
+
+.layout-pb45 {
+  padding-bottom: 0.45rem; }
+
+.layout-pl45 {
+  padding-left: 0.45rem; }
+
+.layout-m50 {
+  margin: 0.5rem; }
+
+.layout-mw50 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem; }
+
+.layout-mh50 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem; }
+
+.layout-mt50 {
+  margin-top: 0.5rem; }
+
+.layout-mr50 {
+  margin-right: 0.5rem; }
+
+.layout-mb50 {
+  margin-bottom: 0.5rem; }
+
+.layout-ml50 {
+  margin-left: 0.5rem; }
+
+.layout-p50 {
+  padding: 0.5rem; }
+
+.layout-pw50 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem; }
+
+.layout-ph50 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem; }
+
+.layout-pt50 {
+  padding-top: 0.5rem; }
+
+.layout-pr50 {
+  padding-right: 0.5rem; }
+
+.layout-pb50 {
+  padding-bottom: 0.5rem; }
+
+.layout-pl50 {
+  padding-left: 0.5rem; }
+
+/**
+ * flex 布局
+ */
+.layout-flex-container {
+  /* webkit, moz历史版本兼容 */
+  display: -webkit-box;
+  display: -moz-box;
+  /* IE私有写法 */
+  display: -ms-flexbox;
+  /* 标准写法 */
+  display: -webkit-flex;
+  display: flex;
+  /* 子元素 */
+  /* 填充方式: 默认 */
+  /* 方向: 横向排列 */
+  /* 方向: 竖直排列 */
+  /* justify */
+  /* align */
+  /* 自动换行 */ }
+  .layout-flex-container > .layout-flex-item {
+    /* webkit, moz历史版本兼容 */
+    -webkit-box-flex: initial;
+    -moz-box-flex: initial;
+    /* IE私有写法 */
+    -ms-flex: auto;
+    /* 标准写法 */
+    -webkit-flex: auto;
+    flex: auto; }
+  .layout-flex-container.layout-flex-row {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row; }
+  .layout-flex-container.layout-flex-vertical {
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -ms-box-orient: vertical;
+    -webkit-flex-direction: column;
+    flex-direction: column; }
+    .layout-flex-container.layout-flex-vertical > .layout-flex-item {
+      /* 修复微信旧版本 -webkit-box 下的 -webkit-box-flex:initial 在竖直排列时的 bug */
+      -webkit-box-flex: 1; }
+  .layout-flex-container.layout-flex-justify-start {
+    -webkit-box-pack: start;
+    -webkit-justify-content: start;
+    -ms-flex-pack: start;
+    justify-content: start; }
+  .layout-flex-container.layout-flex-justify-center {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+  .layout-flex-container.layout-flex-justify-end {
+    -webkit-box-pack: end;
+    -webkit-justify-content: end;
+    -ms-flex-pack: end;
+    justify-content: end; }
+  .layout-flex-container.layout-flex-justify-space-between {
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+  .layout-flex-container.layout-flex-justify-space-around {
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around; }
+  .layout-flex-container.layout-flex-align-start {
+    -webkit-box-align: start;
+    -webkit-align-items: start;
+    -ms-flex-align: start;
+    -ms-grid-row-align: start;
+    align-items: start; }
+  .layout-flex-container.layout-flex-align-center {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    -ms-grid-row-align: center;
+    align-items: center; }
+  .layout-flex-container.layout-flex-align-end {
+    -webkit-box-align: end;
+    -webkit-align-items: end;
+    -ms-flex-align: end;
+    -ms-grid-row-align: end;
+    align-items: end; }
+  .layout-flex-container.layout-flex-wrap {
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+
+/*
+ *
+ */
+.layout-fixed-bottom {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  z-index: 100; }
+  .layout-fixed-bottom .btn-block {
+    border-radius: 0; }
+
+/**
+ * 文字排版库
+ */
+.typography-ellipsis {
+  /*display: inline-block;*/
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis; }
+
+.typography-clamp {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  line-height: 1.5;
+  max-height: 3em;
+  word-wrap: break-word;
+  word-break: break-all;
+  overflow: hidden;
+  -webkit-line-clamp: 2; }
+  h1 > .typography-clamp, h2 > .typography-clamp, h3 > .typography-clamp, h4 > .typography-clamp, h5 > .typography-clamp, h6 > .typography-clamp, .h1 > .typography-clamp, .h2 > .typography-clamp, .h3 > .typography-clamp, .h4 > .typography-clamp, .h5 > .typography-clamp, .h6 > .typography-clamp {
+    line-height: 1.5;
+    max-height: 3em; }
+
+/* icon 图标库 */
+.icon {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url("/Public/Home/images/icon/icon-sprite.png") no-repeat center center; }
+
+.icon-gender-male {
+  background-position: 0 0; }
+
+.icon-gender-female {
+  background-position: 0 -16px; }
+
+.icon-close {
+  background-position: 0 -32px; }
+
+.icon-profile {
+  background-position: 0 -48px; }
+
+/*.icon-diamond {
+    background-image: url("/qingniwan/img/diamond.png");
+}
+
+.icon-arrow-right {
+    background-image: url("/qingniwan/img/arrow-right.png");
+}*/
+/* Include this file in your html if you are using the CSP mode. */
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak],
+.ng-cloak, .x-ng-cloak,
+.ng-hide:not(.ng-hide-animate) {
+  display: none !important; }
+
+ng\:form {
+  display: block; }
+
+.ng-animate-shim {
+  visibility: hidden; }
+
+.ng-anchor {
+  position: absolute; }
+
+/**
+* 项目定制类
+*/
+/*// 组件 - bootstrap 定制
+@import "base/custom/bootstrap-custom";
+// 组件 - user
+@import "base/custom/user";
+// 组件 - card
+@import "base/custom/card";
+// 组件 - header
+@import "base/custom/header";
+// 组件 - footer
+@import "base/custom/footer";*/
+/* 横向平板 & PC */
+/**
+ * 初始化整站基础样式
+ */
+html {
+  font-size: 100px !important; }
+
+body {
+  font-size: 14px;
+  font-size: 0.14rem;
+  line-height: 1.5;
+  font-family: "Helvetica Neue", Helvetica, "Hiragino Sans GB", "Segoe UI", "Microsoft Yahei", Tahoma, Arial, STHeiti, sans-serif;
+  overflow-y: scroll;
+  color: #404040; }
+
+a, input, textarea, button {
+  outline: none; }
+  a:hover, a:active, a:focus, a:visited, input:hover, input:active, input:focus, input:visited, textarea:hover, textarea:active, textarea:focus, textarea:visited, button:hover, button:active, button:focus, button:visited {
+    outline: none; }
+
+textarea {
+  border-color: #ccc;
+  resize: none; }
+
+/* 设置滚动条的样式 */
+::-webkit-scrollbar {
+  width: 5px; }
+
+/* 滚动槽 */
+::-webkit-scrollbar-track {
+  /*-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.3);*/
+  border-radius: 8px; }
+
+/* 滚动条滑块 */
+::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.1);
+  /*-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.5);*/ }
+
+::-webkit-scrollbar-thumb:window-inactive {
+  background: rgba(0, 0, 0, 0.05); }
+
+/**
+ * 常用样式库
+ */
+.disn {
+  display: none; }
+
+.translucent {
+  opacity: .5; }
+
+.hidden-for-viewport {
+  position: absolute;
+  left: -9999em;
+  right: -9999em; }
+
+/**
+ * IM 布局
+ */
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: transparent;
+  /* For some Androids */
+  /*-webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;*/ }
+
+.message-container {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #bbb; }
+  .message-container > .side, .message-container > .main {
+    height: 100%;
+    float: left; }
+  .message-container > .side {
+    width: 30%;
+    position: relative;
+    z-index: 2;
+    overflow: auto;
+    background: #f5f5f5; }
+    .message-container > .side .list-group {
+      margin-bottom: 0; }
+      .message-container > .side .list-group > .list-group-item {
+        position: relative;
+        height: 0.82rem;
+        border-left: 0 none;
+        border-radius: 0; }
+        .message-container > .side .list-group > .list-group-item .media {
+          cursor: default;
+          overflow: visible; }
+          .message-container > .side .list-group > .list-group-item .media .media-left {
+            position: relative;
+            overflow: visible; }
+            .message-container > .side .list-group > .list-group-item .media .media-left img {
+              border: 1px solid rgba(255, 255, 255, 0.2);
+              opacity: .62; }
+            .message-container > .side .list-group > .list-group-item .media .media-left .label-message-tips {
+              position: absolute;
+              top: 0.05rem;
+              right: 0.1rem;
+              display: block;
+              width: 0.15rem;
+              height: 0.15rem;
+              overflow: hidden;
+              border-radius: 50%;
+              background-color: #fa4548; }
+              .message-container > .side .list-group > .list-group-item .media .media-left .label-message-tips.hide {
+                transition: all .3s ease;
+                transform: scale(0);
+                display: block;
+                opacity: 0; }
+          .message-container > .side .list-group > .list-group-item .media .media-body .media-heading {
+            font-size: 16px;
+            font-size: 0.16rem;
+            line-height: 1;
+            margin: 0;
+            padding: 0;
+            color: #404040; }
+            .message-container > .side .list-group > .list-group-item .media .media-body .media-heading .nickname {
+              display: inline-block;
+              max-width: 120px;
+              overflow: hidden;
+              white-space: nowrap;
+              text-overflow: ellipsis; }
+          .message-container > .side .list-group > .list-group-item .media .media-body .media-content {
+            height: 0.24rem;
+            line-height: 0.24rem; }
+            .message-container > .side .list-group > .list-group-item .media .media-body .media-content .label-industry,
+            .message-container > .side .list-group > .list-group-item .media .media-body .media-content .label-last-login {
+              display: inline-block;
+              max-width: 150px;
+              overflow: hidden;
+              white-space: nowrap;
+              text-overflow: ellipsis;
+              font-size: 12px;
+              font-size: 0.12rem;
+              color: #999; }
+            .message-container > .side .list-group > .list-group-item .media .media-body .media-content .btn-view-profile {
+              background-color: #20B7B6;
+              color: #fff; }
+          .message-container > .side .list-group > .list-group-item .media .media-body .media-options {
+            position: absolute;
+            top: 0.05rem;
+            right: 0.05rem; }
+            .message-container > .side .list-group > .list-group-item .media .media-body .media-options .btn-close {
+              opacity: .2;
+              transition: all .3s ease;
+              transform: scale(1) rotate(0deg);
+              cursor: pointer; }
+              .message-container > .side .list-group > .list-group-item .media .media-body .media-options .btn-close:hover {
+                opacity: .8;
+                transform: scale(1.5) rotate(360deg); }
+      .message-container > .side .list-group > .list-group-item.active {
+        background-color: #20B7B6;
+        border-color: #20B7B6;
+        color: #fff; }
+        .message-container > .side .list-group > .list-group-item.active .media .media-left img {
+          transition: all .3s ease;
+          transform: rotate(360deg);
+          opacity: 1; }
+        .message-container > .side .list-group > .list-group-item.active .media .media-body .media-heading {
+          color: #fff; }
+        .message-container > .side .list-group > .list-group-item.active .media .media-body .media-content .btn-view-profile {
+          background-color: #fff;
+          color: #20B7B6; }
+        .message-container > .side .list-group > .list-group-item.active .media .media-body .media-content .label-industry {
+          opacity: .38;
+          color: #fff; }
+  .message-container > .main {
+    width: 70%;
+    position: relative;
+    z-index: 1; }
+    .message-container > .main .message-header {
+      position: relative;
+      width: 100%;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+      background-color: rgba(255, 255, 255, 0.8);
+      text-align: center;
+      height: 0.4rem;
+      line-height: 0.3rem;
+      box-shadow: 0 0 0.1rem rgba(0, 0, 0, 0.2); }
+      .message-container > .main .message-header .message-title {
+        margin: 0;
+        padding: 0.05rem 0.1rem;
+        text-align: left;
+        cursor: default; }
+        .message-container > .main .message-header .message-title > * {
+          display: inline-block;
+          vertical-align: middle; }
+        .message-container > .main .message-header .message-title .btn-view-profile {
+          display: inline-block;
+          /*border: 1px solid #ccc;
+          border-radius: 50%;*/
+          /*padding: 3px;*/
+          cursor: pointer; }
+          .message-container > .main .message-header .message-title .btn-view-profile > .icon {
+            opacity: .38;
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 5px; }
+          .message-container > .main .message-header .message-title .btn-view-profile:hover > .icon {
+            opacity: .62; }
+      .message-container > .main .message-header .message-options {
+        position: absolute;
+        top: 4px;
+        right: 4px; }
+        .message-container > .main .message-header .message-options .btn-close {
+          display: block;
+          width: 30px;
+          height: 30px;
+          padding: 6px;
+          border: 1px solid rgba(0, 0, 0, 0.05);
+          border-radius: 50%;
+          text-align: center;
+          text-decoration: none;
+          cursor: pointer;
+          transition: all .3s ease;
+          opacity: .38;
+          transform: rotate(0deg) scale(0.8); }
+          .message-container > .main .message-header .message-options .btn-close:hover {
+            border-color: rgba(0, 0, 0, 0.38);
+            transform: rotate(360deg) scale(1);
+            opacity: .62; }
+          .message-container > .main .message-header .message-options .btn-close > .icon {
+            display: block; }
+    .message-container > .main .message-panel {
+      height: calc(80% - 40px);
+      overflow: auto;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.15); }
+      .message-container > .main .message-panel .message-list .message-item {
+        padding: 0.15rem 0.1rem 0.15rem; }
+        .message-container > .main .message-panel .message-list .message-item.send-by-me {
+          float: left;
+          text-align: left; }
+          .message-container > .main .message-panel .message-list .message-item.send-by-me .media {
+            cursor: default; }
+            .message-container > .main .message-panel .message-list .message-item.send-by-me .media .media-body .media-heading .nickname {
+              float: left;
+              padding-right: .5em; }
+            .message-container > .main .message-panel .message-list .message-item.send-by-me .media .media-body .media-heading .create-time {
+              color: #ccc; }
+            .message-container > .main .message-panel .message-list .message-item.send-by-me .media .media-body .media-content {
+              white-space: normal;
+              -ms-word-break: break-all;
+              word-break: break-all;
+              word-break: break-word;
+              word-wrap: break-word;
+              overflow-wrap: break-word;
+              -webkit-hyphens: auto;
+              -moz-hyphens: auto;
+              -ms-hyphens: auto;
+              hyphens: auto; }
+            .message-container > .main .message-panel .message-list .message-item.send-by-me .media .media-right {
+              display: none; }
+        .message-container > .main .message-panel .message-list .message-item.send-by-others {
+          float: right;
+          text-align: right;
+          background-color: #e9fbfb; }
+          .message-container > .main .message-panel .message-list .message-item.send-by-others .media {
+            cursor: default; }
+            .message-container > .main .message-panel .message-list .message-item.send-by-others .media .media-left {
+              display: none; }
+            .message-container > .main .message-panel .message-list .message-item.send-by-others .media .media-body .media-heading .nickname {
+              float: right;
+              padding-left: .5em; }
+            .message-container > .main .message-panel .message-list .message-item.send-by-others .media .media-body .media-heading .create-time {
+              color: #ccc; }
+            .message-container > .main .message-panel .message-list .message-item.send-by-others .media .media-body .media-content {
+              white-space: normal;
+              -ms-word-break: break-all;
+              word-break: break-all;
+              word-break: break-word;
+              word-wrap: break-word;
+              overflow-wrap: break-word;
+              -webkit-hyphens: auto;
+              -moz-hyphens: auto;
+              -ms-hyphens: auto;
+              hyphens: auto; }
+    .message-container > .main .message-sender {
+      height: 20%;
+      box-shadow: 0 0 0.1rem rgba(0, 0, 0, 0.2); }
+      .message-container > .main .message-sender .message-will-send {
+        width: 100%;
+        height: 60%;
+        padding: 0.04rem 0.06rem;
+        border: 0 none;
+        color: #404040; }
+      .message-container > .main .message-sender .send-button {
+        margin-right: 0.05rem;
+        padding-left: 0.2rem;
+        padding-right: 0.2rem;
+        background-color: #20B7B6;
+        border-color: #20B7B6; }
+  .message-container.mobile-version {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    transition: transform .3s ease;
+    border: 0 none; }
+    .message-container.mobile-version.dialogue-view {
+      transform: translate3d(0, 0, 0); }
+    .message-container.mobile-version.message-view {
+      transform: translate3d(-50%, 0, 0); }
+    .message-container.mobile-version > .side, .message-container.mobile-version > .main {
+      width: 50%; }
+    .message-container.mobile-version .media-options {
+      display: none; }
+
+/*# sourceMappingURL=message.css.map */

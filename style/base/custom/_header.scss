@@ -1,0 +1,90 @@
+/**
+ * 页头部
+ */
+.global-header {
+    box-shadow: 0 .02rem .04rem rgba(93, 93, 93, .5);
+    .navbar {
+        border-radius: 0;
+    }
+    .navbar-default {
+        background-color: #000;
+        border: 0 none;
+        .navbar-header {
+            margin-left: pxToRem(20px);
+            margin-right: pxToRem(20px);
+            & > .navbar-brand {
+                float: left;
+                padding: pxToRem(10px);
+                font-size: pxToRem(18px);
+                line-height: pxToRem(20px);
+                height: pxToRem(70px);
+                opacity: .85;
+                transform: scale(.95);
+                transition: all .3s ease-in-out;
+                &:hover {
+                    /*opacity: .95;
+                    transform: scale(1);*/
+                }
+                &.active {
+                    opacity: 1;
+                    transform: scale(1);
+                }
+            }
+        }
+        .navbar-nav {
+            & > li {
+                margin: 0 pxToRem(10px);
+                & > a {
+                    position: relative;
+                    display: block;
+                    padding: 0 pxToRem(10px);
+                    line-height: pxToRem(70px);
+                    color: #ccc;
+                    &:hover,
+                    &:focus {
+                        color: #fff;
+                    }
+                }
+            }
+            & > li.active {
+                & > a {
+                    color: #fff;
+                    background-color: rgba(255, 255, 255, 0.2);
+                }
+            }
+        }
+        .navbar-nav.navbar-right {
+            & > li {
+                margin: 0 pxToRem(10px);
+                & > a {
+                    position: relative;
+                    display: block;
+                    padding: 0 pxToRem(10px);
+                    line-height: pxToRem(70px);
+                    color: #ccc;
+                    &:hover,
+                    &:focus {
+                        color: #fff;
+                    }
+                }
+            }
+            & > li.active {
+                & > a {
+                    color: #fff;
+                    background-color: rgba(255, 255, 255, 0.2);
+                }
+            }
+            & > li.dropdown {
+                &.open > a {
+                    background-color: #fff;
+                    color: #333333;
+                }
+                .dropdown-menu {
+                    min-width: pxToRem(161px);
+                    border: 0;
+                }
+            }
+        }
+
+    }
+}

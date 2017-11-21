@@ -1,0 +1,491 @@
+@charset "utf-8";
+/* CSS Document */
+.message-box {
+  background: #fff;
+  width: 855px;
+  height: 485px;
+  position: relative;
+}
+.message-prompt {
+  position: absolute;
+  z-index: 999;
+  top: 0;
+  left: 80px;
+  background: #fafafa;
+  box-shadow: 0 0 8px #999;
+  padding: 6px 16px 6px 6px;
+  line-height: 18px;
+  width: 180px;
+  text-align: left;
+  border-radius: 3px;
+  font-size: 12px;
+}
+.message-prompt .content {
+    color: #999;
+}
+.message-prompt .close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: url(../images/icon/close01-b.png);
+  width: 24px;
+  height: 24px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.message-prompt .sjjtby {
+  position: absolute;
+  left: -6px;
+  bottom: -5px;
+  background: url(../images/icon/sjjtbx.png);
+  width: 16px;
+  height: 13px;
+}
+
+.message-box .left-friends {
+  width: 270px;
+  min-height: 485px;
+  background: #eee;
+}
+.message-box .left-friends .friends-list {
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 485px;
+}
+.message-box .left-friends .one-friend {
+  width: 270px;
+  height: 76px;
+  text-align: center;
+  padding: 10px 0;
+  cursor: pointer;
+}
+.message-box .left-friends .one-friend.active {
+  background: #20B7B6;
+}
+.message-box .left-friends .touxiang {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  margin-left: 20px;
+  background: #fff;
+  margin-top: 8px;
+}
+.message-box .one-friend .new-tell {
+  color: red;
+  font-size: 14px;
+  line-height: 14px;
+  display: none;
+}
+.message-box .one-friend.msg-new .new-tell {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 12px;
+  line-height: 12px;
+  display: block;
+}
+.message-box .left-friends .touxiang .pic {
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  overflow: hidden;
+}
+.message-box .left-friends .msg-list {
+  font-size: 14px;
+  line-height: 30px;
+  margin-left: 16px;
+}
+/*.message-box .systemMsg {
+  line-height: 52px;
+  color: #333;
+}
+.message-box .systemMsg.active {
+  color: #fff;
+}*/
+.dialogue-area .systemMsgBox-li {
+  background: #f0f0f0;
+  padding: 10px;
+  border-radius: 2px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+.message-box .one-friend.active .the-name {
+  color: #fff;
+}
+.message-box .one-friend .the-gender {
+  background: url(../images/icon/gender-icons.png);
+  width: 16px;
+  height: 30px;
+  overflow: hidden;
+  margin-left: 6px;
+  margin-right: 6px;
+}
+.message-box .one-friend.active .the-age {
+  color: #fff;
+}
+.message-box .one-friend.active .professional {
+  font-size: 12px;
+  line-height: 12px;
+  text-align: left;
+  color: #fff;
+}
+.message-box .one-friend .the-name {
+  color: #333;
+  max-width: 120px; 
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.message-box .one-friend .the-age {
+  color: #333;
+}
+.message-box .one-friend .professional {
+  font-size: 12px;
+  line-height: 12px;
+  text-align: left;
+  color: #333;
+  max-width: 120px; 
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.message-box .one-friend .goto-link {
+  margin-top: 2px;
+  text-align: left;
+}
+.message-box .one-friend .goto-link a {
+  height: 20px;
+  font-size: 12px;
+  line-height: 20px;
+  color: #fff;
+  padding: 0 8px;
+  background: #20B7B6;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 3px;
+}
+.message-box .one-friend.active .goto-link a {
+  background: #fff;
+  color: #20B7B6;
+}
+
+.message-box .dialogue-area {
+  width: 585px;
+  background: #fff;
+  text-align: left;
+}
+.message-box .dialogue-area .dialogue-part {
+  display: none;
+}
+.dialogue-area .systemMsgBox {
+  height: 445px;
+  padding: 20px 50px;
+  overflow-y: scroll;
+}
+.dialogue-area .systemMsgBox-in {
+  height: 405px;
+  padding: 20px 50px;
+  text-align: left;
+}
+.dialogue-area .systemMsgBox-in .systemTiShi {
+  line-height: 30px;
+}
+.message-box .dialogue-area .right-msg {
+  padding: 20px 50px;
+}
+.message-box .dialogue-area .tit-row {
+  line-height: 36px;
+}
+.message-box .dialogue-area .tit {
+  font-size: 18px;
+  font-weight: 700;
+  color: #333;  
+}
+.message-box .dialogue-area .price {
+  font-size: 16px;
+  font-weight: 700;
+  color: #20B7B6;
+  margin-left: 12px;
+}
+.message-box .dialogue-area .state {
+  height: 24px;
+  padding: 0 10px;
+  border-radius: 2px;
+  background-color: #20B7B6;
+  color: #fff;
+  text-align: center;
+  line-height: 24px;
+  margin-top: 6px;
+  margin-left: 26px;
+}
+.message-box .dialogue-area .address {
+  color: #999;
+  line-height: 20px;
+}
+.message-box .dialogue-area .pic {
+  width: 120px;
+  height: 85px;
+  overflow: hidden;
+  margin-right: 10px;
+}
+.message-box .dialogue-area .dialogue-win {
+  height: 330px;
+  padding: 20px 50px;
+  overflow-y: scroll;
+}
+.message-box .dialogue-area .dialogue-li {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.message-box .dialogue-area .dialogue-win .lt-tx {
+  width: 36px;
+  height: 36px;
+  border-radius: 18px;
+  overflow: hidden;
+}
+.message-box .dialogue-area .dialogue-win .text-box {
+  width: 380px;
+}
+.message-box .dialogue-area .dialogue-win .text {
+  padding: 5px 10px;
+  line-height: 24px;
+  font-size: 13px;
+  width: 100%;
+  border-radius: 4px;
+  background-color: #f0f0f0;
+}
+.message-box .dialogue-area .dialogue-win .date {
+  padding-top: 6px;
+  line-height: 24px;
+  font-size: 12px;
+  color: #999;
+}
+.message-box .dialogue-in {
+  position: relative;
+  border-top: #e5e5e5 1px solid;
+  height: 114px;
+}
+.message-box .dialogue-in textarea {
+  height: 50px;
+  width: 575px;
+  border: 0;
+  padding: 5px;
+  outline: none;
+}
+.message-box .dialogue-in button {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  width: 80px;
+  height: 36px;
+  text-align: centerl;
+  line-height: 36px;
+  color: #fff;
+  background-color: #20B7B6;
+  border: 0;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+/* message box mobile*/
+html,body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #fafafa;
+}
+/*聊天好友*/
+.messageBoxMobile {
+  position: relative;
+  background: #fff;
+  width: 200%;
+  height: 100%;
+}
+
+.messageBoxMobile .left-friends {
+  width: 50%;
+  height: 100%;
+  background: #eee;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.messageBoxMobile .friends-out {
+  border-bottom: #e5e5e5 1px solid;
+  height: 56px;
+  padding: 0 4%;
+  background: #fff;
+}
+.messageBoxMobile .friends-out .back-close {
+  position: relative;
+  padding: 0 10px 0 24px;
+  height: 26px;
+  line-height: 26px;
+  border-radius: 4px;
+  border: #666 1px solid;
+  margin-top: 14px;
+}
+.messageBoxMobile .friends-out .back-close b {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: url(../images/icon/xyjt-msg-back.png) 8px center no-repeat;
+  height: 28px;
+  width: 28px;
+}
+.messageBoxMobile .left-friends .one-friend {
+  position: relative;
+  height: 52px;
+  text-align: center;
+  border-bottom: #ccc 1px solid;
+  box-shadow: 0 1px 0 #fafafa;
+  padding: 10px 10% 10px 5%;
+}
+.messageBoxMobile .left-friends .touxiang {
+  position: relative;
+  width: 48px;
+  height: 48px;
+  border-radius: 26px;
+  padding: 2px;
+  background: #fff;
+}
+.messageBoxMobile .left-friends .touxiang .pic {
+  width: 48px;
+  height: 48px;
+  border-radius: 24px;
+}
+.messageBoxMobile .left-friends .msg-list {
+  font-size: 15px;
+  margin-left: 16px;
+}
+.messageBoxMobile .one-friend .the-gender {
+  background: url(../images/icon/gender-icons.png);
+  width: 16px;
+  height: 30px;
+  overflow: hidden;
+  margin-left: 6px;
+  margin-right: 6px;
+}
+.messageBoxMobile .one-friend  .the-name {
+  font-weight: 700;
+  color: #333;
+  line-height: 30px;
+  max-width: 120px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.messageBoxMobile .one-friend  .the-age {
+  color: #333;
+}
+.messageBoxMobile .one-friend  .professional {
+  font-size: 12px;
+  line-height: 16px;
+  color: #333;
+  text-align: left;
+}
+.messageBoxMobile .one-friend .biaoshi a {
+  border: #999 1px solid;
+  line-height: 30px;
+  height: 30px;
+  padding: 0 8px;
+  display: inline-block;
+  border-radius: 3px;
+  text-align: center;
+  color: #666;
+  margin-top: 10px;
+}
+.messageBoxMobile .one-friend.msg-new .biaoshi {
+  display: block;
+}
+
+/*聊天窗口*/
+.messageBoxMobile .dialogue-area {
+  width: 50%;
+  height: 100%;
+  text-align: left;
+}
+.messageBoxMobile .dialogue-area .systemMsgBox {
+  padding: 20px;
+  overflow-y: scroll;
+}
+.messageBoxMobile .dialogue-area .right-msg {
+  padding: 20px;
+}
+.messageBoxMobile .dialogue-area .dialogue-win {
+  position: relative;
+  padding: 20px;
+  overflow-y: scroll;
+}
+.messageBoxMobile .dialogue-area .dialogue-li {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.messageBoxMobile .dialogue-area .dialogue-win .lt-tx {
+  padding: 6%;
+  border-radius: 100px;
+  overflow: hidden;
+  margin-right: 5%;
+  background: url(../images/pic/tx-pic.jpg) center no-repeat;
+  background-size: cover;
+}
+.messageBoxMobile .dialogue-area .dialogue-win .text-box {
+  width: 220px;
+}
+.messageBoxMobile .dialogue-area .dialogue-win .text {
+  padding: 5px 10px;
+  line-height: 24px;
+  width: 100%;
+  border-radius: 4px;
+  background-color: #f0f0f0;
+}
+.messageBoxMobile .dialogue-area .dialogue-win .date {
+  padding-top: 6px;
+  line-height: 24px;
+  font-size: 12px;
+  color: #999;
+}
+.messageBoxMobile .dialogue-in {
+  border-bottom: #e5e5e5 1px solid;
+  height: 56px;
+  padding: 0 4%;
+  background: #fff;
+}
+.messageBoxMobile .dialogue-in .back {
+  position: relative;
+  padding: 0 10px 0 24px;
+  height: 26px;
+  line-height: 26px;
+  border-radius: 4px;
+  border: #666 1px solid;
+  margin-top: 14px;
+}
+.messageBoxMobile .dialogue-in .back b {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: url(../images/icon/xyjt-msg-back.png) 8px center no-repeat;
+  height: 28px;
+  width: 28px;
+}
+.messageBoxMobile .dialogue-in input {
+  height: 26px;
+  outline: none;
+  width: 80px;
+  border: 0;
+  border-bottom: #ccc 1px solid;
+  margin: 16px 10px 0;
+}
+.messageBoxMobile .dialogue-in button {
+  width: 52px;
+  text-align: centerl;
+  line-height: 28px;
+  color: #fff;
+  background-color: #20B7B6;
+  border: 0;
+  border-radius: 2px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 14px;
+}

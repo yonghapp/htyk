@@ -1,0 +1,220 @@
+@charset "utf-8";
+/* CSS Document */
+.cover-body {
+  position:fixed;
+  z-index: 10000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+.cover-body-bg {
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.7);
+}
+.login-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -290px;
+  margin-left: -200px;
+  width: 320px;
+  padding: 30px 40px 50px;
+  background: #fff;
+  text-align: center;
+  display: none;
+}
+.login-box .tit {
+  font-size: 24px;
+  line-height: 36px;
+  color: #000;
+}
+.login-box .from-list li {
+  position: relative;
+  margin-top: 10px;
+}
+.login-box .from-list .phone-val {
+ position: absolute;
+ z-index: 9;
+ top: 1px;
+ left: 1px;
+ cursor: pointer;
+ max-height: 360px;
+}
+.login-box .from-list .phone-win {
+  background-color: transparent;
+  border-right: #ccc 1px solid;
+  height: 38px;
+  width: 60px;
+  text-align: center;
+  line-height: 38px;
+  border-radius: 2px 0 0 2px;
+}
+.login-box .from-list .phone-win input[type='text'] {
+  background: #e5e5e5;
+  height: 38px;
+  width: 40px;
+  text-align: center;
+  line-height: 38px;
+  border-radius: 2px 0 0 2px;
+  border: 0;
+  background-color: transparent;
+  outline: none;
+}
+.login-box .from-list .phone-list {
+  background: #fafafa;
+  width: 240px;
+  margin-top: 0;
+  border: #1E90FF 1px solid;
+  text-align: left;
+  line-height: 30px;
+  overflow-y: scroll;
+  display: none;
+}
+.login-box .from-list .phone-list li {
+  margin: 0;
+  padding: 0 20px;
+}
+.login-box .from-list .phone-list li:hover {
+  background: #1E90FF;
+  color: #fff;
+}
+.login-box .from-list input[type='text'] {
+  width: 300px;
+  height: 40px;
+  line-height: 40px;
+  background: #f3f3f3;
+  border: 0;
+  padding: 0 10px;
+}
+.login-box .from-list input[type='password'] {
+  width: 300px;
+  height: 40px;
+  line-height: 40px;
+  background: #f3f3f3;
+  border: 0;
+  padding: 0 10px;
+}
+.login-box .from-list #np11,#np21 {
+  display: none;
+  width: 298px;
+  height: 38px;
+  line-height: 38px;
+  border: #d23636 1px solid;
+  color: #d23636;
+  padding: 0 10px;
+}
+.login-box .from-list .yanzheng {
+  position: relative;
+}
+.login-box .from-list .catch {
+  position: absolute;
+  right: 4px;
+  top: 11px;
+  height: 18px;
+  line-height: 18px;
+  border-left: 2px solid #ccc;
+  padding: 0 8px;
+  color: #20B7B6;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+.login-box .from-list .catch01 {
+  position: absolute;
+  right: 4px;
+  top: 11px;
+  height: 18px;
+  line-height: 18px;
+  padding: 0 8px;
+  color: #20B7B6;
+  cursor: pointer;
+}
+.login-box .from-list .catch01 label {
+  background: url(../images/icon/radio.png) left center no-repeat;
+  padding-left: 20px;
+  cursor: pointer;
+}
+.login-box .from-list .catch01 input[type='checkbox']:checked+label {
+  background: url(../images/icon/radio-c.png) left center no-repeat;
+  padding-left: 20px;
+}
+.login-box .from-list input[type='checkbox'] {
+  display: none;
+}
+.login-box .from-list input[type='checkbox']:checked+label {
+  background: url(../images/icon/choose.jpg) no-repeat;
+  
+}
+.login-box .from-list .label-checkbox {
+  width: 16px;
+  height: 16px;
+  border-radius: 2px;
+  background: #f3f3f3;
+  display: block;
+}
+.login-box .from-list .terms {
+  margin-top: 20px;
+}
+.login-box .from-list .terms span {
+  line-height: 16px;
+  padding-left: 8px;
+}
+.login-box .from-list .agree {
+  font-size: 12px;
+  line-height: 24px;
+  text-align: left;
+  color: #000;
+}
+.login-box .from-list .agree a {
+  color: #dd4139;
+}
+.login-box .from-list .login-btn {
+  width: 320px;
+  height: 40px;
+  line-height: 40px;
+  color: #fff;
+  border: 0;
+  background-color: #20B7B6;
+  cursor: pointer;
+}
+.login-box .third-party-login {
+  width: 300px;
+  margin-left: 10px;
+  margin-top: 16px;
+}
+.login-box .third-party-login li {
+  width: 150px;
+  text-align: center;
+}
+.login-box .third-party-login .link {
+  display: block;
+}
+.login-box .third-party-login .icon-bg {
+  display: inline-block;
+  background: #ccc;
+  width: 46px;
+  height: 46px;
+  border-radius: 23px;
+  overflow: hidden;
+}
+.login-box .third-party-login .link b {
+  display: block;
+  background: url(../images/icon/login-icons.png);
+  background-position: 0 -92px;
+  width: 46px;
+  height: 46px;
+  border-radius: 23px;
+  overflow: hidden;
+}
+.login-box .third-party-login .link01 b {
+  background-position: 0 -46px;
+}
+.login-box .third-party-login .icon-name {
+  line-height: 32px;
+  color: #666;
+}
+

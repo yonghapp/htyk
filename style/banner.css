@@ -1,0 +1,119 @@
+@charset "utf-8";
+/* CSS Document */
+#slider {
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+#slider .banner_wrap {
+  position: absolute;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 2;
+}
+#slider .banner_wrap li {
+  position: relative;
+  height: 100%;
+  overflow: hidden;  
+}
+#slider .banner_wrap .banner-text {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  text-align: left;
+}
+.indexBanner_num {
+  position: absolute;
+  z-index: 999;
+  display: inline-block;
+  bottom: 20px;
+  right: 20px;
+} 
+.indexBanner_num a {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  _zoom: 1;
+  background: #7B797B;
+  border-radius: 8px;
+  margin-right: 8px;
+}
+.indexBanner_num a.on {
+  background: #fff;
+}
+
+#mobileBanner {
+  position: absolute;
+  left: 50%;
+  margin-left: -800px;
+  width: 1600px;
+  height: 570px;
+  overflow: hidden;
+  display: none;
+}
+@media screen and (max-width:980px) {
+  #slider {
+    display: none;
+  }
+  #mobileBanner {
+    display: block;
+  }
+  .header {
+    height: 570px;
+  }
+}
+#slider .control {
+  position: absolute;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#slider .control .arrow-area {
+  position: relative;
+  width: 50%;
+  height: 100%;
+}
+#slider .arrow-area .arrow-bg {
+  position: absolute;
+  background: url(../images/icon/black5.png);
+  width: 54px;
+  height: 60px;
+  border-radius: 4px;
+}
+#slider .left-area .prev-bg {
+  top: 50%;
+  left: 30px;
+  margin-top: -30px;
+  display: none;
+}
+#slider .right-area .next-bg {
+  top: 50%;
+  right: 30px;
+  margin-top: -30px;
+  display: none;
+}
+#slider .left-area:hover .prev-bg {
+  display: block;
+}
+#slider .right-area:hover .next-bg {
+  display: block;
+}
+#slider .arrow-area .prev {
+  background: url(../images/icon/prev.png) center no-repeat;
+  width: 54px;
+  height: 60px;
+  display: block;
+}
+#slider .arrow-area .next {
+  background: url(../images/icon/next.png) center no-repeat;
+  width: 54px;
+  height: 60px;
+  display: block;
+}
+
+
+

@@ -1,0 +1,399 @@
+@charset "utf-8";
+
+@import "base";
+
+/**
+ * 初始化整站基础样式
+ */
+html {
+    font-size: #{$GlobalRootEmSize}px !important;
+}
+
+body {
+    @include fontSizeToRem(14px);
+    line-height: 1.5;
+    font-family: "Helvetica Neue", Helvetica, "Hiragino Sans GB", "Segoe UI", "Microsoft Yahei", Tahoma, Arial, STHeiti, sans-serif;
+    overflow-y: scroll;
+    color: #404040;
+}
+
+a, input, textarea, button {
+    outline: none;
+    &:hover,
+    &:active,
+    &:focus,
+    &:visited {
+        outline: none;
+    }
+}
+
+textarea {
+    border-color: #ccc;
+    resize: none;
+}
+
+/* 设置滚动条的样式 */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* 滚动槽 */
+::-webkit-scrollbar-track {
+    /*-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.3);*/
+    border-radius: 8px;
+}
+
+/* 滚动条滑块 */
+::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background: rgba(0, 0, 0, 0.1);
+    /*-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.5);*/
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+    background: rgba(0, 0, 0, 0.05);
+}
+
+/**
+ * 常用样式库
+ */
+.disn {
+    display: none;
+}
+
+.translucent {
+    opacity: .5;
+}
+
+.hidden-for-viewport {
+    position: absolute;
+    left: -9999em;
+    right: -9999em;
+}
+
+/**
+ * IM 布局
+ */
+html,
+body {
+    height: 100%;
+    overflow: hidden;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent; /* For some Androids */
+    /*-webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;*/
+}
+
+.message-container {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #bbb;
+    & > .side,
+    & > .main {
+        height: 100%;
+        float: left;
+    }
+    & > .side {
+        width: 30%;
+        position: relative;
+        z-index: 2;
+        overflow: auto;
+        background: #f5f5f5;
+        .list-group {
+            margin-bottom: 0;
+            > .list-group-item {
+                position: relative;
+                height: pxToRem(82px);
+                border-left: 0 none;
+                border-radius: 0;
+                .media {
+                    cursor: default;
+                    overflow: visible;
+                    .media-left {
+                        position: relative;
+                        overflow: visible;
+                        img {
+                            border: 1px solid rgba(255, 255, 255, .2);
+                            opacity: .62;
+                        }
+                        .label-message-tips {
+                            position: absolute;
+                            top: pxToRem(5px);
+                            right: pxToRem(10px);
+                            display: block;
+                            width: pxToRem(15px);
+                            height: pxToRem(15px);
+                            overflow: hidden;
+                            border-radius: 50%;
+                            background-color: #fa4548;
+                            &.hide {
+                                transition: all .3s ease;
+                                transform: scale(0);
+                                display: block;
+                                opacity: 0;
+                            }
+                        }
+                    }
+                    .media-body {
+                        .media-heading {
+                            @include fontSizeToRem(16px);
+                            line-height: 1;
+                            margin: 0;
+                            padding: 0;
+                            color: #404040;
+                            .nickname {
+                                display: inline-block;
+                                max-width: 120px;
+                                overflow: hidden;
+                                white-space: nowrap;
+                                text-overflow: ellipsis;
+                            }
+                        }
+                        .media-content {
+                            height: pxToRem(24px);
+                            line-height: pxToRem(24px);
+                            .label-industry,
+                            .label-last-login {
+                                display: inline-block;
+                                max-width: 150px;
+                                overflow: hidden;
+                                white-space: nowrap;
+                                text-overflow: ellipsis;
+                                @include fontSizeToRem(12px);
+                                color: #999;
+                            }
+                            .btn-view-profile {
+                                background-color: $primary-color;
+                                color: #fff;
+                            }
+                        }
+                        .media-options {
+                            position: absolute;
+                            top: pxToRem(5px);
+                            right: pxToRem(5px);
+                            .btn-close {
+                                opacity: .2;
+                                transition: all .3s ease;
+                                transform: scale(1) rotate(0deg);
+                                cursor: pointer;
+                                &:hover {
+                                    opacity: .8;
+                                    transform: scale(1.5) rotate(360deg)
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            > .list-group-item.active {
+                background-color: $primary-color;
+                border-color: $primary-color;
+                color: #fff;
+                .media {
+                    .media-left {
+                        img {
+                            transition: all .3s ease; // cubic-bezier(.62, .62, .38, 1.38)
+                            transform: rotate(360deg);
+                            opacity: 1;
+                        }
+                    }
+                    .media-body {
+                        .media-heading {
+                            color: #fff;
+                        }
+                        .media-content {
+                            .btn-view-profile {
+                                background-color: #fff;
+                                color: $primary-color;
+                            }
+                            .label-industry {
+                                opacity: .38;
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    & > .main {
+        width: 70%;
+        position: relative;
+        z-index: 1;
+        .message-header {
+            position: relative;
+            width: 100%;
+            border-bottom: 1px solid rgba(0, 0, 0, .15);
+            background-color: rgba(255, 255, 255, .8);
+            text-align: center;
+            height: pxToRem(40px);
+            line-height: pxToRem(30px);
+            box-shadow: 0 0 pxToRem(10px) rgba(0, 0, 0, .2);
+            .message-title {
+                margin: 0;
+                padding: pxToRem(5px) pxToRem(10px);
+                text-align: left;
+                cursor: default;
+                > * {
+                    display: inline-block;
+                    vertical-align: middle;
+                }
+                .btn-view-profile {
+                    display: inline-block;
+                    /*border: 1px solid #ccc;
+                    border-radius: 50%;*/
+                    /*padding: 3px;*/
+                    cursor: pointer;
+                    & > .icon {
+                        opacity: .38;
+                        display: inline-block;
+                        vertical-align: middle;
+                        margin-right: 5px;
+                    }
+                    &:hover > .icon {
+                        opacity: .62;
+                    }
+                }
+            }
+            .message-options {
+                position: absolute;
+                top: 4px;
+                right: 4px;
+                .btn-close {
+                    display: block;
+                    width: 30px;
+                    height: 30px;
+                    padding: 6px;
+                    border: 1px solid rgba(0, 0, 0, .05);
+                    border-radius: 50%;
+                    text-align: center;
+                    text-decoration: none;
+                    cursor: pointer;
+                    transition: all .3s ease;
+                    opacity: .38;
+                    transform: rotate(0deg) scale(.8);
+                    &:hover {
+                        border-color: rgba(0, 0, 0, .38);
+                        transform: rotate(360deg) scale(1);
+                        opacity: .62;
+                    }
+                    > .icon {
+                        display: block;
+                    }
+                }
+                .btn-back {
+
+                }
+            }
+
+        }
+        .message-panel {
+            height: calc(80% - 40px);
+            overflow: auto;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+            .message-list {
+                .message-item {
+                    padding: pxToRem(15px) pxToRem(10px) pxToRem(15px);
+                    &.send-by-me {
+                        float: left;
+                        text-align: left;
+                        .media {
+                            cursor: default;
+                            .media-left {
+
+                            }
+                            .media-body {
+                                .media-heading {
+                                    .nickname {
+                                        float: left;
+                                        padding-right: .5em;
+                                    }
+                                    .create-time {
+                                        color: #ccc;
+                                    }
+                                }
+                                .media-content {
+                                    @include word-break-en();
+                                }
+                            }
+                            .media-right {
+                                display: none;
+                            }
+                        }
+                    }
+                    &.send-by-others {
+                        float: right;
+                        text-align: right;
+                        background-color: #e9fbfb;
+                        .media {
+                            cursor: default;
+                            .media-left {
+                                display: none;
+                            }
+                            .media-body {
+                                .media-heading {
+                                    .nickname {
+                                        float: right;
+                                        padding-left: .5em;
+                                    }
+                                    .create-time {
+                                        color: #ccc;
+                                    }
+                                }
+                                .media-content {
+                                    @include word-break-en();
+                                }
+                            }
+                            .media-right {
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .message-sender {
+            height: 20%;
+            box-shadow: 0 0 0.1rem rgba(0, 0, 0, 0.2);
+            .message-will-send {
+                width: 100%;
+                height: 60%;
+                padding: pxToRem(4px) pxToRem(6px);
+                border: 0 none;
+                color: #404040;
+            }
+            .send-button {
+                margin-right: pxToRem(5px);
+                padding-left: pxToRem(20px);
+                padding-right: pxToRem(20px);
+                background-color: $primary-color;
+                border-color: $primary-color;
+            }
+        }
+    }
+    &.mobile-version {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 200%;
+        //transform: translate3d(0, 0, 0);
+        transition: transform .3s ease;
+        border: 0 none;
+        &.dialogue-view {
+            transform: translate3d(0, 0, 0);
+        }
+        &.message-view {
+            transform: translate3d(-50%, 0, 0);
+        }
+        & > .side,
+        & > .main {
+            width: 50%;
+        }
+        .media-options {
+            display: none;
+        }
+    }
+}
+

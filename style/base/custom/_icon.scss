@@ -1,0 +1,31 @@
+/* icon 图标库 */
+.icon {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url('/Public/Home/images/icon/icon-sprite.png') no-repeat center center;
+}
+
+.icon-gender-male {
+    background-position: 0 0;
+}
+
+.icon-gender-female {
+    background-position: 0 -16px;
+}
+
+.icon-close {
+    background-position: 0 -32px;
+}
+
+.icon-profile {
+    background-position: 0 -48px;
+}
+
+/*.icon-diamond {
+    background-image: url("/qingniwan/img/diamond.png");
+}
+
+.icon-arrow-right {
+    background-image: url("/qingniwan/img/arrow-right.png");
+}*/

@@ -1,0 +1,766 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<!--<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">-->
+
+<title>wellcee</title>
+
+<!--style-->
+<link rel="stylesheet" href="style/css-reset.css">
+<link rel="stylesheet" href="style/nav.css">
+<link rel="stylesheet" href="style/footer.css">
+<link rel="stylesheet" href="style/slider.css">
+<link rel="stylesheet" href="style/slider.default.css">
+<link rel="stylesheet" href="style/housing-detailed-other.css">
+<link rel="stylesheet" href="style/prettyPhoto.css">
+<link rel="stylesheet" href="style/rjhcss.css">
+
+</head>
+
+<body onLoad="initialize()" onUnload="GUnload()">
+
+<div class="inbody">
+  
+  <div class="nav-box">
+<!--nav-pc-->
+    <div class="nav-pc clearfix" role="navigation">
+      <a class="fl nav" href="/index.php/Home/User/housingSend.html">发布房源</a>
+            
+      <!--语言下拉选择框-->
+      <div id="select-lang-f" class="select-c nav fl">
+        <div class="clearfix lang">
+          <a>中文</a>          <b></b></div>
+        <ul class="lang-list">
+          <li class="clearfix"><a href="?l=en-us">EN</a></li>
+          <li class="clearfix"><a href="?l=zh-cn">中文</a></li>
+          <!-- <li class="clearfix"><a href="?l=fr-ch">FR</a></li> -->
+        </ul>
+      </div>
+        <div class="fl offline-status">
+                <div class="nav message fl">
+                  <div class="tit">消息<b></b></div>
+                  <ul class="msg-list">
+                    <li class="msg-li systemMsg clearfix">
+                      <a class="fl" href="#">系统消息</a>
+                                          </li>
+                    <li class="msg-li chatWindown clearfix">
+                      <a class="fl" href="#">聊天窗口</a>
+                      <!---->
+                                            </li>
+                    <b></b>
+                  </ul>
+                </div>
+                <a class="nav mine fl" href="/index.php/Home/User/mineData.html">
+                  <span class="head-portrait"><img src="http://olv5l4p7e.bkt.clouddn.com/58e74ad957859.png"></span>
+                  <span class="head-name" userid="239">张先生</span>
+                  <span class="head-prompt"><img src="images/icon/click-here.png"></span>
+                </a>
+                <a class="nav exit fl" href="/index.php/Home/User/loginOut.html">退出</a>
+            </div>
+              
+    </div>
+    
+    <!--nav-mobile-->
+    <div class="nav-mobile clearfix">
+      <a class="nav-btn" href="nav-mobile.html"><span></span></a>
+      <a class="serch-link" href="housing-list.html"><span>退出</span></a>
+    </div>
+  
+  </div>
+  
+  <!--header-->
+  <div class="header clearfix" role="banner">
+          
+      <h1 class="logo fl"><a href="/index.php/Home/Index/index.html" style="background: url(images/logo-en.png) left center no-repeat; height: 66px; width:200px; display: inline-block;"></a></h1>
+      
+      <!--搜索框-->
+      <div class="search-box fl">
+        <form class="form-search">
+          <div id="search-result" class="select-c fl">
+            <div class="option-win"><b></b><span id="sdefault">北京&nbsp;（Beijing）</span></div>
+            <ul class="option-list">
+              <!--循环项-->
+              <li id="3">北京&nbsp;（Beijing）</li><!--循环项-->
+              <li id="24">上海&nbsp;Shanghai</li>            </ul>
+          </div>
+          <a class="search-btn fl" href="/index.php/Home/Housing/housingList.html">搜索房源</a>
+        </form>
+      </div>
+  
+  </div>
+  <!-- message part -->
+  <script src="/Public/Home/js/jquery-1.8.3.js"></script>
+  <script src="/Public/Home/js/jquery.cookie.js"></script>
+  <script src="/Public/Home/layer/layer.js"></script>
+  <script src="/Public/Home/js/checkMsg.js?timeStamp=20170408220313"></script>
+
+  
+  <!--main content-->
+  <div class="main" role="main">
+    
+    <div class="cont-box clearfix">
+       
+      <!--左侧-->
+      <div class="left-side fl">
+         <a class="link-box">
+           <ul class="left-msg">
+             <li><div class="msg touxiang"><img src="http://olv5l4p7e.bkt.clouddn.com/58e74ad957859.png"></div></li>
+             <li>
+               <ul class="msg basic clearfix">
+                 <li class="fl the-name">张先生</li>
+                                      <li class="fl the-gender" style="background:url(images/icon/gender-icons.png) no-repeat;background-position:0px 0px;"></li>                 <li class="fl the-age">0</li>
+               </ul>
+             </li>
+              <li style="margin-top: -5px;">
+                  <div class="msg speak-lang">Chinese</div>
+              </li>
+             <li><div class="msg professional">公司职员</div></li>
+           </ul>         
+         </a>
+         <div class="chat-box"><a class="chat" href="/index.php/Home/User/housingModify/houseid/190.html">资料编辑</a></div> 
+         <dl>
+           <dt>关于他</dt>
+           <dd>sdfadf</dd>
+         </dl>                       
+      </div>
+      
+      <!--右侧-->
+      <div class="right-side fr">
+        <ul class="detaile-msg">
+          
+          <li>
+            <div class="tit-row clearfix">
+              <h2 class="tit00 fl">Single apartment&nbsp;</h2>
+                          </div>
+            <div class="supplement clearfix">
+              <div class="price fl">2342.00 ￥ / 月</div>
+              <!-- <a class="apply fl" href="#">立即申请</a> -->
+              <div class="fr date">2017-07-07 最后登录</div>
+            </div>
+          </li>
+          
+          <!--part-->
+          <li class="house-detailed">
+            <h2 class="tit">房屋详情</h2>
+            <!--rjh add-->
+          	<div class="share-box">
+            	<div class="share"><b></b>分享到微信</div>
+                <div class="show">
+                	<div class="weixin">
+                    	<div class="tit"><b></b>微信扫描</div>
+                        <img src="images/pic/erweima.jpg" />
+                    </div>
+                    <div class="weibo">
+                    	<a href="javascript:;"><b></b>新浪微博</a>
+                    </div>
+                </div>
+            </div>
+            
+
+            <div class="detailed-msg">
+              <ul class="list clearfix">
+                <li class="fl detailed-msg-li">
+                  <dl class="clearfix">
+                    <dt class="fl">type:</dt>
+                    <dd class="fl">
+                      合租                                          </dd>
+                  </dl>
+                </li>
+                <li class="fl detailed-msg-li">
+                  <dl class="clearfix">
+                    <dt class="fl">floor：</dt>
+                    <dd class="fl">234</dd>
+                  </dl>
+                </li>
+                <li class="fl detailed-msg-li">
+                  <dl class="clearfix">
+                    <dt class="fl">rooms：</dt>
+                    <dd class="fl">2342</dd>
+                  </dl>
+                </li>
+                <li class="fl detailed-msg-li">
+                  <dl class="clearfix">
+                    <dt class="fl">surface：</dt>
+                    <dd class="fl">2432.00</dd>
+                    <dd class="fl">M²</dd>
+                  </dl>
+                </li>
+                <li class="fl detailed-msg-li">
+                  <dl class="clearfix">
+                    <dt class="fl">deposit：</dt>
+                    <dd class="fl">￥</dd>
+                    <dd class="fl">34234.00</dd>
+                  </dl>
+                </li>
+                <li class="fl detailed-msg-li">
+                  <dl class="clearfix">
+                    <dt class="fl">subway：</dt>
+                    <dd class="fl">
+                                          </dd>
+                  </dl>
+                </li>
+                <li class="fl detailed-msg-li" style="width:100%;">
+                  <dl>
+                    <dt>summary：</dt>
+                    <dd class="supplement">234234234</dd>
+                  </dl>
+                </li>
+              </ul>
+            </div>
+            
+            
+                        
+          </li>
+          
+          <!--part-->
+          <li class="house-detailed">
+            <h2 class="tit">房源图片</h2>
+            <div class="house-photos">
+              <ul class="pic-list clearfix gallery">
+                <li class="pic fl"><a style="background:url(http://olv5l4p7e.bkt.clouddn.com/239_source_0595ee2a6b2442.jpg);background-size:cover;background-position:center;" href="http://olv5l4p7e.bkt.clouddn.com/239_source_0595ee2a6b2442.jpg" rel="prettyPhoto[]"></a></li><li class="pic fl"><a style="background:url(http://olv5l4p7e.bkt.clouddn.com/239_source_1595ee2a98a9dc.jpg);background-size:cover;background-position:center;" href="http://olv5l4p7e.bkt.clouddn.com/239_source_1595ee2a98a9dc.jpg" rel="prettyPhoto[]"></a></li><li class="pic fl"><a style="background:url(http://olv5l4p7e.bkt.clouddn.com/239_source_2595ee2ad18ee4.jpg);background-size:cover;background-position:center;" href="http://olv5l4p7e.bkt.clouddn.com/239_source_2595ee2ad18ee4.jpg" rel="prettyPhoto[]"></a></li>              </ul>
+            </div>
+          </li>
+          
+          <li class="house-detailed">
+            <h2 class="tit">房源设施</h2>
+            <ul class="icon-box clearfix">
+              <li class="fl">
+                <span class="icon icon01 fl"></span>
+                <span class="icon-text">elevator</span>
+              </li>                                                                                                                                                                                                                              </ul>
+          
+          </li>
+          
+          <!--part-->
+          <li class="house-add">
+            <h2 class="tit">地址</h2>
+            <div class="supplement clearfix">
+              <div class="add fl">北京 朝阳区 23424223              </div>
+              <div class="add_hidden" style="display:none">
+              北京朝阳区23424223              </div>
+            </div>
+            <div class="map-box">
+              <div id="imgMap"></div>
+              <!--<ul class="b-s">
+                <li id="bigger" onClick="cbigger()">+</li>
+                <li id="smaller" onClick="csmaller()">-</li>
+              </ul>-->
+            </div>
+          </li>
+          
+          <!--part-->
+          <li class="comments">
+            <h2 class="tit">房客评价</h2>
+            <ul class="list">
+                          </ul>
+            <div class="comments-out">
+              <form class="comments-form">
+                <textarea></textarea>
+                <button class="subs" type="button">回复评论</button>
+              </form>
+            </div>
+          </li>
+           
+        </ul>      
+      </div>
+      
+    </div>
+  
+  </div>
+<!--   <img src="images/icon/loading.gif" /> -->
+  <!--footer-pc-->
+  <div class="cover-body01">
+  <div class="cover-body-bg01"></div>
+     <!--留言板-->
+  <div class="leave-word">
+     <h2 class="tit">联系方式</h2>
+     <div class="cont">
+       <p class="describe">请填写完整信息，方便我们联系您！</p>
+       <div class="form-elem">
+         <label class="label-tit">姓名：</label>
+         <input name="lmname" class="input-text" type="text" placeholder="请输入您的姓名">
+       </div>
+       <div class="form-elem">
+         <label class="label-tit">电话：</label>
+         <input name="lmphone" class="input-text" type="text" placeholder="请输入您的手机号码">
+       </div>
+       <div class="form-elem">
+         <label class="label-tit">邮箱：</label>
+         <input name="lmemail" class="input-text" type="text" placeholder="请输入您的邮箱地址">
+       </div>
+       <div class="form-elem">
+         <label class="label-tit">主题：</label>
+         <input name="lmproject" class="input-text" type="text" placeholder="请输入">
+       </div>
+       <div class="form-elem">
+         <textarea name="lmcontent" class="textarea1" placeholder="内容"></textarea>
+       </div>
+       <div class="btn-row"><button id="lmsend" class="submit-btn" type="button">发送</button></div>
+     </div>
+     <div class="close"><B></B></div>
+  </div>
+
+</div>
+
+<div class="footer-pc">
+     
+    <div class="ft-msg-row">   
+       <div class="inbox">
+        <div class="fl contact-ft"><a class="contact-link" href="#">联系我们</a></div>
+        <ul class="ft-msg fl">
+
+
+
+          
+          <li class="fl">
+            <dl>
+              <dt>公司信息</dt>
+              <dd>
+                  <a class="bt-nav" href="/index.php/Home/Index/aboutme.html">
+                        about wellcee                                          </a>
+                </dd>                            <dd>
+                    <a class="bt-nav" href="/index.php/Home/Index/seviceTerms.html">
+                          Our terms of use                                            </a>
+                  </dd>              <dd>
+                    <a class="bt-nav" href="/index.php/Home/Index/privacy.html">
+                          Q&amp;A                                            </a>
+                  </dd>            </dl>
+          </li>
+          <li class="fl">
+            <dl>
+              <dt>探索和发现</dt>
+              <dd>
+                    <a class="bt-nav" href="/index.php/Home/Index/discount.html">
+                          Join Wellcee group                                            </a>
+                  </dd>              <dd>
+                    <a class="bt-nav" href="/index.php/Home/Index/safety.html">
+                          Important to read !!!                                            </a>
+                  </dd>            </dl>
+          </li>
+
+
+
+
+
+
+
+
+          <li class="fl">
+            <dl class="bdsharebuttonbox">
+              <dt>关注我们</dt>
+              <dd class="fl"><a style="padding-left:0;" class="share facebook popup_fbook" data-cmd="fbook" href="#"></a></dd>
+              <dd class="fl f911">
+                <a style="padding-left:0;" class="share weixin bds_weixin"></a>
+                  <div class="wrap"></div>
+                  <a href="javascript:;" id="weixin" class=" asdfwe img-911 none"><img src="images/uu888.png"></a>
+              </dd>
+              <dd class="fl">
+                  <a style="padding-left:0;" class="share blog-xl bds_tsina weixind" data-cmd="tsina" href="#"></a>
+                  <a href="javascript:;" id="weixind" class="img-911  none"><img src="images/u911.png"></a>
+              </dd>
+            </dl>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+    
+    <div class="copy-row">
+      <span>&copy;wellcee, Inc.</span>
+    </div>
+  
+  </div>
+
+<script src="js/jquery-1.8.3.js"></script> 
+<!--最下方的微信点击-->
+<script type="text/javascript">
+$(".wrap").css({
+    "z-index":"9998",
+  "display":"none",
+     "position": "fixed",
+     "top": "0",
+     "left": "0",
+     "width":$(window).width()+"px",
+     "height":$(window).height()+"px",
+     "background":"rgba(0,0,0,0.8)"
+    })
+$("#weixin").css({
+  "z-index":"9999",
+  "display":"none",
+     "position": "fixed",
+     "top": "50%",
+     "left": "50%",
+     "width":"180px",
+     "height":"180px",
+     "margin-top":"-90px",
+     "margin-left":"-90px"
+})
+$("#weixind").css({
+  "z-index":"9999",
+  "display":"none",
+     "position": "fixed",
+     "top": "50%",
+     "left": "50%",
+     "width":"180px",
+     "height":"180px",
+     "margin-top":"-90px",
+     "margin-left":"-90px"
+})
+$("body").on("click",".wrap",function(){
+  $(".wrap").hide();
+  $("#weixin").hide();
+  $("#weixind").hide();
+})
+$(".share.weixin").click(function(){
+  $(".wrap").show();
+  $("#weixin").show();
+})
+$(".share.weixind").click(function(){
+  $(".wrap").show();
+  $("#weixind").show();
+})
+ 
+
+  // $(".f911").click(function(){
+  //   $(".img-911").toggle();
+  // });
+  // $(document).click(function(){
+  //   $(".img-911").hide();
+  // });
+//   $(".img-911").click(function(event){
+//     event.stopPropagation();
+
+// });
+</script> 
+<script>
+    /*分享设置*/
+   
+</script>
+
+<div style="display:none;"><script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1260953598'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s11.cnzz.com/z_stat.php%3Fid%3D1260953598%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script></div>
+
+<script src="/Public/Home/js/jquery-1.8.3.js"></script>
+<script>
+  $(".contact-link").click(function(){
+    $(".cover-body01").show();
+    $(".enter-box").hide();
+    $(".login-box").hide();
+    $(".password-back-win").hide();
+    $(".password-modify-win").hide();
+    $(".leave-word").show();
+  })
+  $(".cover-body-bg01").click(function(){
+    $(".cover-body01").hide();
+  })
+  $(".leave-word .close").click(function(){
+    $(".cover-body01").hide();
+  })
+</script>
+<script type="text/javascript">
+  $("#lmsend").click(function(){
+      var filter1   = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+      var filter2   = /^[0-9]*$/;
+      var lmname    = $("[name='lmname']").val();
+      var lmphone   = $("[name='lmphone']").val();
+      var lmemail   = $("[name='lmemail']").val();
+      var lmproject = $("[name='lmproject']").val();
+      var lmcontent = $("[name='lmcontent']").val();
+      if(lmname == ''){
+          //姓名必填
+          $("[name='lmname']").attr("placeholder","姓名必填");
+          return false;
+      }
+      if(lmphone == ''){
+          //电话必填
+          $("[name='lmphone']").attr("placeholder","电话必填");
+          return false;
+      }
+      if(!filter2.test(lmphone)){
+          //手机格式不正确
+          $("[name='lmphone']").val("");
+          $("[name='lmphone']").attr("placeholder","手机格式不正确");
+          return false;
+      }
+      if(lmemail == ''){
+          //邮箱必填
+          $("[name='lmemail']").attr("placeholder","邮箱必填");
+          return false;
+      }
+      if(!filter1.test(lmemail)){
+          //邮箱格式不正确
+          $("[name='lmemail']").val("");
+          $("[name='lmemail']").attr("placeholder","邮箱格式不正确");
+          return false;
+      }
+      if(lmproject == ''){
+          //主题必填
+          $("[name='lmproject']").attr("placeholder","主题必填");
+          return false;
+      }
+      if(lmcontent == ''){
+          //内容必填
+          $("[name='lmcontent']").attr("placeholder","内容必填");
+          return false;
+      }
+      $.post(
+          "/index.php/Home/User/lmsg.html",
+          {"lmname":lmname,"lmphone":lmphone,"lmemail":lmemail,"lmproject":lmproject,"lmcontent":lmcontent},
+          function(data){
+              if(data==1){
+                  $("[name='lmproject']").val("");
+                  $("[name='lmcontent']").val("");
+                  $(".cover-body01").hide();
+                  $(this).parents(".leave-word").hide();
+                  alert("留言成功");
+              }else{
+                  $(".cover-body01").hide();
+                  $(this).parents(".leave-word").hide();
+              }
+          }
+      )
+  })
+</script>
+
+
+<!-- 初始化 - 站内信配置 -->
+<div id="layer_webim">
+    <iframe id="iframe_webim" src="/index.php/Home/Message/index.html" frameborder="0"></iframe>
+</div>
+<style>
+    #layer_webim {
+        position: fixed;
+        z-index: 9999;
+        overflow: hidden;
+        background: rgba(0, 0, 0, .5);
+        box-shadow: 0 0 10px rgba(0, 0, 0, .38);
+        /*transition: all .8s ease-out;*/
+    }
+
+    #layer_webim.hide {
+        bottom: 10px;
+        right: 10px;
+        width: 1px;
+        height: 1px;
+        visibility: hidden;
+    }
+
+    #layer_webim.show {
+        bottom: 10px;
+        right: 10px;
+        width: 800px;
+        height: 480px;
+        visibility: visible;
+    }
+
+    #layer_webim > iframe {
+        width: 800px;
+        height: 480px;
+    }
+</style>
+<script>
+    /**
+     * 显示 Message 聊天窗口
+     * @param autoLoadMessage 是否在显示聊天窗口的同时, 加载窗口中第一个对话框里的聊天记录
+     */
+    function showMessageWindow(autoLoadMessage) {
+        // 初始化第一个对话框里的聊天记录数据
+        var iframeMessageWindow = document.getElementById('iframe_webim').contentWindow;
+        if (iframeMessageWindow && iframeMessageWindow.angular && iframeMessageWindow.angular.element('[ng-controller="messageController"]') && iframeMessageWindow.angular.element('[ng-controller="messageController"]').scope() && !iframeMessageWindow.angular.element('[ng-controller="messageController"]').scope().isLoading) {
+            $('#layer_webim').removeClass('hide').addClass('show');
+            if (autoLoadMessage) {
+                var messageAppScope = iframeMessageWindow.angular.element('[ng-controller="messageController"]').scope();
+                var firstDialogueItem = messageAppScope.currentDialogueList[0];
+                if (firstDialogueItem) {
+                    messageAppScope.currentDialogueID = firstDialogueItem.id;
+                    messageAppScope.currentToUserID = firstDialogueItem.userid;
+                    messageAppScope.currentDialogueIndex = 0;
+                    messageAppScope.needShowProfile = firstDialogueItem.flag1;
+                    messageAppScope.loadCurrentDialogueData(messageAppScope.ACTION_DIALOGUE_INIT);
+                }
+            }
+        } else {
+            layer.msg('IM Loading...');
+        }
+
+    }
+    /**
+     * 隐藏 Message 聊天窗口
+     */
+    function hideMessageWindow() {
+        $('#layer_webim').addClass('hide').removeClass('show');
+    }
+</script>
+  
+  <!--footer-mobile-->
+  <!---->
+</div>
+
+<!--javascript-->
+<script src="js/jquery-1.8.3.js"></script>
+<script src="js/jquery.cookie.js"></script>
+<script src="js/jquery.cycle2.min.js"></script>
+<script src="http://ditu.google.cn/maps/api/js?key=AIzaSyClPRxBwWKX0rqdIr0M6aDxlX_FYgHle2M&language=zh-CN"></script>
+<script src="js/select-copy.js"></script>
+<script src="js/jquery.prettyphoto.js"></script>
+<script type="text/javascript">
+  //回复评论
+  $(function(){
+      $(".subs").click(function(){
+          var uid = "239";
+                    if(uid==0){
+              $(".login").click();
+              return false;
+          }
+          var id = "190";
+          var content = $(this).prev().val();
+          if(content!==''){
+             window.location.href="/index.php/Home/User/comments/content/"+content+"/id/"+id;
+          }else{
+             alert("评论不能为空");//内容为空
+          }
+      })
+      
+    $("area[rel^='prettyPhoto']").prettyPhoto();
+    $(".gallery:first a[rel^='prettyPhoto']").prettyPhoto({animation_speed:'fast',slideshow:10000, hideflash: true});
+  
+   })
+   
+   $(function(){
+  var h_pic = $(".cont-box .right-side .pic-list .pic");
+  //document.title = h_pic.length;
+  if(h_pic.length == 1){
+    h_pic.width(695 + '%px');
+    h_pic.height(400 + 'px');
+  }else if(h_pic.length == 2){
+    h_pic.width(340 + 'px');
+    h_pic.height(240 + 'px');
+  }
+  else if(h_pic.length == 3){
+    h_pic.width(225 + 'px');
+    h_pic.height(145 + 'px');
+    h_pic.eq(0).width(455 + 'px');
+    h_pic.eq(0).height(305 + 'px');
+  }
+  else if(h_pic.length == 4){
+    h_pic.width(221.67 + 'px');
+    h_pic.height(140 + 'px');
+    h_pic.eq(0).width(695 + 'px');
+    h_pic.eq(0).height(400 + 'px');
+  }
+  else if(h_pic.length == 5){
+    h_pic.eq(1).width(225 + 'px');
+    h_pic.eq(1).height(145 + 'px');
+    h_pic.eq(2).width(225 + 'px');
+    h_pic.eq(2).height(145 + 'px');
+    h_pic.eq(0).width(455 + 'px');
+    h_pic.eq(0).height(305 + 'px');
+    h_pic.eq(3).width(340 + 'px');
+    h_pic.eq(3).height(220 + 'px');
+    h_pic.eq(4).width(340 + 'px');
+    h_pic.eq(4).height(220 + 'px');
+  }
+  else if(h_pic.length == 6){
+    h_pic.eq(1).width(225 + 'px');
+    h_pic.eq(1).height(125 + 'px');
+    h_pic.eq(2).width(225 + 'px');
+    h_pic.eq(2).height(125 + 'px');
+    h_pic.eq(0).width(455 + 'px');
+    h_pic.eq(0).height(265 + 'px');
+    h_pic.eq(4).width(455 + 'px');
+    h_pic.eq(4).height(265 + 'px');
+    h_pic.eq(4).css('float','right'); 
+    h_pic.eq(3).width(225 + 'px');
+    h_pic.eq(3).height(125 + 'px');
+    h_pic.eq(5).width(225 + 'px');
+    h_pic.eq(5).height(125 + 'px');
+  }
+  else if(h_pic.length == 7){
+    h_pic.width(340 + 'px');
+    h_pic.height(200 + 'px');
+    h_pic.eq(0).width(455 + 'px');
+    h_pic.eq(0).height(265 + 'px');
+    h_pic.eq(1).width(225 + 'px');
+    h_pic.eq(1).height(125 + 'px');
+    h_pic.eq(2).width(225 + 'px');
+    h_pic.eq(2).height(125 + 'px');
+  }
+  else if(h_pic.length == 8){
+    h_pic.width(166 + 'px');
+    h_pic.height(100 + 'px');
+    h_pic.eq(0).width(333 + 'px');
+    h_pic.eq(0).height(215 + 'px');
+    h_pic.eq(5).width(221.67 + 'px');
+    h_pic.eq(5).height(130 + 'px');
+    h_pic.eq(6).width(221.67 + 'px');
+    h_pic.eq(6).height(130 + 'px');
+    h_pic.eq(7).width(221.67 + 'px');
+    h_pic.eq(7).height(130 + 'px');
+  }
+  else if(h_pic.length == 9){
+    h_pic.width(225 + 'px');
+    h_pic.height(125 + 'px');
+    h_pic.eq(0).width(455 + 'px');
+    h_pic.eq(0).height(265 + 'px');
+    h_pic.eq(4).width(455 + 'px');
+    h_pic.eq(4).height(265 + 'px');
+    h_pic.eq(4).css('float','right');
+    h_pic.eq(6).width(455 + 'px');
+    h_pic.eq(6).height(265 + 'px');
+  }else {
+    h_pic.width(166 + 'px');
+    h_pic.height(100 + 'px');
+    h_pic.eq(0).width(333 + 'px');
+    h_pic.eq(0).height(215 + 'px');
+    h_pic.eq(6).width(333 + 'px');
+    h_pic.eq(6).height(215 + 'px');
+    h_pic.eq(9).css({"position":"absolute","bottom":"0","left":"0"});
+  }
+})
+
+</script>
+<script type="text/javascript"> 
+  function  initialize(){
+  var mapType = google.maps.MapTypeId.ROADMAP;
+  var lat = 39.915168, lng = 116.403875, zoom = 15;
+  var mapOptions = {
+      center: new google.maps.LatLng(lat, lng),  //地图的中心点
+      zoom: zoom,               　　　　　　　　　　//地图缩放比例
+     // mapTypeId: mapType,      　　　　　　　　　 　//指定地图展示类型：卫星图像、普通道路
+      scrollwheel: true          　　　　　　　　　 //是否允许滚轮滑动进行缩放
+  
+  };
+  map = new google.maps.Map(document.getElementById("imgMap"), mapOptions); 
+   //在地图上标记了一个地理位置图
+  var address = $(".house-add ").find(".add_hidden").html();
+  geocoder = new google.maps.Geocoder();
+  geocoder.geocode( { 'address': address}, function(results, status) { 
+      console.log(results[0].geometry.location) 
+      map.setCenter(results[0].geometry.location); 
+      //alert(results[0].geometry.location);
+      var mapOptions = {
+          center: new google.maps.LatLng(results[0].geometry.location.lat(), results[0].geometry.location.lng()),  //地图的中心点
+          zoom: zoom,               　　　　　　　　　　//地图缩放比例
+         // mapTypeId: mapType,      　　　　　　　　　 　//指定地图展示类型：卫星图像、普通道路
+          scrollwheel: true          　　　　　　　　　 //是否允许滚轮滑动进行缩放
+      };
+      
+      var marker = new google.maps.Marker({
+      map: map,
+      position: new google.maps.LatLng(results[0].geometry.location.lat(), results[0].geometry.location.lng())
+      });
+  });
+
+  }
+</script>
+<script>
+  	$('.share').click(function(){
+		alert(a)
+        $('.show').slideToggle();         	
+	})
+  </script>
+
+</body>
+</html>
