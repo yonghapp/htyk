@@ -1,0 +1,123 @@
+/*
+**Mon, 11 Apr 2016 00:55:33 GMT**
+*/
+
+@charset "utf-8";   /* 国际通用编码格式*/
+
+body,h1,h2,h3,h4,h5,h6,hr,p,dl,dt,dd,ul,ol,li,form,fieldset,legend,button,input,textarea,th,td {
+	margin: 0;
+	padding: 0;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-weight: 400;   /*字体正常  100-500细 500-900粗*/
+}
+
+body,button,input,select,textarea {
+	font: 12px/1.5 tahoma,arial,"Hiragino Sans GB","\5b8b\4f53",sans-serif;  /*1.5em行高*/
+}
+
+body {
+	background: #FFF;
+	color: #333;
+}
+
+em,i {
+	font-style: normal;  /*斜体正常*/
+}
+
+fieldset,img {            /*fieldset表单里的*/
+	border: 0;
+}
+
+ul,ol,li {
+	list-style: none;
+	list-style-position: outside;   /*列表的小图标是在列表的外面*/
+}
+
+button,input,select,textarea {
+	font-size: 100%;
+	outline: 0;
+}
+
+textarea {
+	resize: none;
+}
+
+table {
+	border-collapse: collapse;        /* 表格里的边框合并*/
+	border-spacing: 0;
+}
+
+a {
+	color: #333;
+	text-decoration: none;
+	outline: 0;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+p,span,em,strong {
+	word-break: break-all;
+	word-wrap: break-word;
+}
+
+.clearfix:after {     /*在clearfix的后面加。。。的意思  */    /*用来清除浮动对父级元素的影响  加在父级元素上*/
+	content: "";   /*添加一个空内容*/
+	display: block;     /* 块显示*/
+	height: 0;
+	clear: both;    /*清楚浮动*/      /*用来清除兄弟元素浮动带来的影响 加在自身*/
+	visibility: hidden;    /*不显示*/
+}
+
+.clearfix {
+	zoom: 1;
+}
+
+.clear {
+	clear: both;
+	display: block;
+	height: 0;
+	overflow: hidden;
+	font-size: 0;
+}
+
+.tl {
+	text-align: left;
+}
+
+.tc {
+	text-align: center;
+}
+
+.tr {
+	text-align: right;
+}
+
+.fl {
+	float: left;
+	display: inline;
+}
+
+.fr {
+	float: right;
+	display: inline;
+}
+
+.pr {
+	position: relative;
+}
+
+.pa {
+	position: absolute;
+}
+
+.none {
+	display: none;
+}
+
+.fontYH {
+	font-family: Microsoft YaHei,"\u5fae\u8f6f\u96c5\u9ed1",Microsoft JhengHei,"\u534e\u6587\u7ec6\u9ed1",STHeiti,MingLiu,Serif;
+}

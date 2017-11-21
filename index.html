@@ -1,1607 +1,499 @@
-
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=Edge">
-<!--<meta name="viewport" content="initial-scale=0.6, minimum-scale=0.6, maximum-scale=1.0, user-scalable=1">-->
-
-<title>wellcee</title>
-
-<!--style-->
-<link rel="stylesheet" href="style/css-reset.css">
-<link rel="stylesheet" href="style/nav.css">
-<link rel="stylesheet" href="style/footer.css">
-<link rel="stylesheet" href="style/slider.css">
-<link rel="stylesheet" href="style/slider.default.css">
-<link rel="stylesheet" href="style/housing-detailed-other.css">
-<link rel="stylesheet" href="style/login.css">
-<link rel="stylesheet" href="style/enter.css">
-<link rel="stylesheet" href="style/prettyPhoto.css">
-<link rel="stylesheet" href="style/rjhcss.css">
-
+	<meta charset="UTF-8">
+	<title>萌宠</title>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/mengchong.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">	
 </head>
+<body>
+	<div class="bgall"></div>
+	<div class="box1">
+	<p class="del">×</p>
+		<form action="do.php" class="form1">
+			<label for="ure_name">账 &nbsp; &nbsp;&nbsp;&nbsp;户：</label>
+			<input type="text" name="" id="ur_name" class="ure_name" placeholder="请输入账户名">
+			<label for="pass">密 &nbsp; &nbsp;&nbsp;&nbsp;码：</label>
+			<input type="password" name="" id="pass" class="passs" placeholder="请输入密码">
+			<label for="spass">重复密码:&nbsp; </label>
+			<input type="password" name="" id="spass" class="spasss" placeholder="请再次输入密码">
+			<label for="ages">年 &nbsp; &nbsp;&nbsp;&nbsp;龄：</label>
+			<input type="text" name="" id="age" class="age" placeholder="请输入你的年龄">
+			<label for="sex">性 &nbsp; &nbsp;&nbsp;&nbsp;别：</label>
+			男<input type="radio" name="sex" id="sex" class="ur_sex" value="男">
+			女<input type="radio" name="sex" id="sex" class="ur_sex" value="女">
+			<input type="submit" name="" class="subs" value="注册">
+		</form>
 
-<body onUnload="GUnload()">
-<div style="display:none;"><img src="http://olv5l4p7e.bkt.clouddn.com/146_source_05923ce53de5b5.jpg"></div>
-<div class="cover-body">
-    <div class="cover-body-bg"></div>
-    <form type="post" class="enter-box">
-        <h2 class="tit">手机/邮箱登录</h2>
-        <ul class="from-list">
-          <li><input name="user" type="text" placeholder="手机/邮箱账号"></li>
-          <li><input name="pwd" type="password" placeholder="请输入密码"></li>
-          <li>
-            <div class="password-back clearfix">
-              <span class="fl">忘记密码？</span>
-              <span class="fr password-back-link">找回密码</span>
-            </div>
-            <div class="changeto-login">还没有账号？<span class="login-link">我要注册</span></div>
-          </li>
-          <li><button id="sub1" type="button" class="enter-btn">登录</button></li>
-        </ul>
-    </form>
-    <div class="login-box">
-      <h2 class="tit">用户注册</h2>
-      <p style="font-size:12px;color:#999;line-height:30px;" class="prompt">注册必须手机验证！！</p>
-      <ul class="from-list">
-        <li><input name="uname" type="text" placeholder="姓名"></li>
-        <li class="clearfix">
-          <input style="padding:0 10px 0 70px;width:240px;" class="phone-num" name="mobile" type="text" placeholder="手机号码">
-          <input name="mobile1" type="hidden" />
-          <div class="phone-val">
-            <div class="phone-win"><input type="text" name="iso" value="+86"></div>
-            <ul class="phone-list">
-              <div class="shoudong" style="padding:0 20px;">手动输入</div>
-              <li>中国（<span>+86</span>）</li><li>英国（<span>+44</span>）</li><li>美国（<span>+1</span>）</li><li>法国（<span>+33</span>）</li><li>日本（<span>+81</span>）</li><li>韩国（<span>+82</span>）</li><li>俄罗斯（<span>+7</span>）</li><li>意大利（<span>+37</span>）</li>            </ul>
-          </div>
-        </li>
-        <li class="yanzheng">
-          <input name="vcode" type="text" placeholder="输入验证码">
-          <input class="catch" type="button" value="手机验证" />
-          <input name="hid" type="hidden" value="0" />
-        </li>
-        <li class="yanzheng">
-          <input name="email" type="text" placeholder="邮箱地址">
-          <input id="catch01-checkbox" type="checkbox" checked="checked">
-        </li>
-        <li>
-          <input id="np1" name="pwd" type="password" placeholder="输入密码">
-          <input id="np11" type="text" value="输入密码">
-        </li>
-        <li>
-          <input id="np2" name="pwd1" type="password" placeholder="再次输入密码">
-          <input id="np21" type="text" value="输入密码">
-        </li>
-        <li class="clearfix terms">
-          <input type="checkbox" checked id="checkbox-login">
-          <label for="checkbox-login" class="label-checkbox fl"></label>
-          <span class="fl">我已阅读使用条款</span>
-        </li>
-        <li class="agree">注册即表示我同意wellcee的<a href="/index.php/Home/Index/seviceTerms.html">唯心所“寓”网站服务条款</a></li>
-        <li><button id="sub2" class="login-btn">注册</button></li>
-      </ul>
-  </div>  
+		<div class="Text"></div>
+	</div>
+	<div class="box">
+	<p class="del">×</p>
+		<form action="do.php" class="form">
+			<label for="ur_name">账&nbsp;&nbsp;户：</label>
+			<input type="text" name="" id="ur_name" class="ur_name" placeholder="请输入账户名">
+			<label for="pass">密&nbsp;&nbsp;码：</label>
+			<input type="password" name="" id="pass" class="pass" placeholder="请输入密码">
+			<input type="submit" name="" class="sub" value="登录">
+		</form>
+		<div class="text"></div>
+	</div>
+	<div class="tot">人很多</div>
+	<div class="logobox">
+		<div class="logo">
+			<div class="left">
+				<a href=""><img src="images/logo1.png" title="萌宠生活馆" alt="萌宠生活馆"></a>
+			</div>
+			<div class="right">
+				<ul>
+					<li><a class="denglu">登录</a></li>
+					<li><a class="zhuce">注册</a></li>
+					<li><a >游客</a></li>
+					<li><a class="back"></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="add">
+		<div class="er">
+			<p><a href="">关注我们</a></p>
+			<div class="s1"><img src="images/028.jpg" alt=""></div>
+		</div>
+	</div>
+	<div class="BG">
+		<div class="navbox">
+			<div class="nav">
+				<ul>
+					<li class="n-list">
+						<a href="">首页</a>
+					</li>
+					<li class="n-list">
+						<a href="">宠物品种<i></i></a>
+						<ul>
+							<li><a href="">狗狗</a></li>
+							<li><a href="">猫咪</a></li>
+							<li><a href="">小宠</a></li>
+							<li><a href="">水族</a></li>
+							<li><a href="">爬虫</a></li>
 
-    <!--找回密码-->
-    <div class="password-back-win">
-       <h2 class="tit">密码找回</h2>
-       <div class="cont">
-         <p class="describe">通过绑定的手机号或者邮箱账号找回密码...</p>
-         <div class="phone-way way-box">
-           <label class="phoneWay way">用手机号找回</label>
-           <input name="myphone" type="text">
-           <div class="phone-val">
-           <div class="phone-win"><input type="text" name="iso1" value="+86"></div>
-           <ul class="phone-list">
-             <li>中国（<span>+86</span>）</li><li>英国（<span>+44</span>）</li><li>美国（<span>+1</span>）</li><li>法国（<span>+33</span>）</li><li>日本（<span>+81</span>）</li><li>韩国（<span>+82</span>）</li><li>俄罗斯（<span>+7</span>）</li><li>意大利（<span>+37</span>）</li>           </ul>
-         </div>
-           <b class="icon"></b>
-         </div>
-         <div class="email-way way-box">
-           <label class="emailWay way">用邮箱账号找回</label>
-           <input name="myemail" type="text">
-           <b class="icon"></b>
-         </div>
-         <div id="yanzhenma" class="btn-row"><button class="submit" id="bpwdp" type="button">发送</button></div>
-         <div id="yanzhenlink" class="btn-row"><button class="submit" id="bpwde" type="button">发送</button></div>
-       </div>
-    </div>
-    
-    <!--修改密码-->
-    <div class="password-modify-win">
-       <h2 class="tit">密码修改</h2>
-       <div class="cont">
-         <div class="cont-part clearfix">
-           <label class="old fl">旧密码</label>
-           <input name="opwd" class="fr" type="password">
-           <input style="display:none" name="opwd01" class="fr" type="text">
-         </div>
-         <div class="cont-part clearfix">
-           <label class="new fl">新密码</label>
-           <input name="npas" class="fr" type="password">
-           <input style="display:none" name="npas01" class="fr" type="text">
-         </div>
-         <div class="cont-part clearfix" style="position:relative;">
-           <label class="new fl" style="position:absolute;top:50%;width:92px;line-height:18px;height:36px;"><span style="position:relative;top:-50%;display:block;height:36px;">新密码确认</span></label>
-           <input name="npas1" class="fr" type="password">
-           <input style="display:none" name="npas11" class="fr" type="text">
-         </div>
-         <div class="btn-row"><button class="submit" id="mpwd" type="button">提交</button></div>
-       </div>
-    </div> 
-     
-</div>
-<div class="inbody">
-  <div class="nav-box">
-<!--nav-pc-->
-    <div class="nav-pc clearfix" role="navigation">
-      <a class="fl nav" href="/index.php/Home/User/housingSend.html">发布房源</a>
-            
-      <!--语言下拉选择框-->
-      <div id="select-lang-f" class="select-c nav fl">
-        <div class="clearfix lang">
-          <a>中文</a>          <b></b></div>
-        <ul class="lang-list">
-          <li class="clearfix"><a href="?l=en-us">EN</a></li>
-          <li class="clearfix"><a href="?l=zh-cn">中文</a></li>
-          <!-- <li class="clearfix"><a href="?l=fr-ch">FR</a></li> -->
-        </ul>
-      </div>
-        <div class="fl offline-status">
-                <div class="nav message fl">
-                  <div class="tit">消息<b></b></div>
-                  <ul class="msg-list">
-                    <li class="msg-li systemMsg clearfix">
-                      <a class="fl" href="#">系统消息</a>
-                                          </li>
-                    <li class="msg-li chatWindown clearfix">
-                      <a class="fl" href="#">聊天窗口</a>
-                      <!---->
-                                            </li>
-                    <b></b>
-                  </ul>
-                </div>
-                <a class="nav mine fl" href="/index.php/Home/User/mineData.html">
-                  <span class="head-portrait"><img src="http://olv5l4p7e.bkt.clouddn.com/239_headpic_5951c11183aff.jpg"></span>
-                  <span class="head-name" userid="239">张先生</span>
-                  <span class="head-prompt"><img src="images/icon/click-here.png"></span>
-                </a>
-                <a class="nav exit fl" href="/index.php/Home/User/loginOut.html">退出</a>
-            </div>
-              
-    </div>
-    
-    <!--nav-mobile-->
-    <div class="nav-mobile clearfix">
-      <a class="nav-btn" href="nav-mobile.html"><span></span></a>
-      <a class="serch-link" href="housing-list.html"><span>退出</span></a>
-    </div>
-  
-  </div>
-  
-  <!--header-->
-  <div class="header clearfix" role="banner">
-          
-      <h1 class="logo fl"><a href="/index.php/Home/Index/index.html" style="background: url(images/logo-en.png) left center no-repeat; height: 66px; width:200px; display: inline-block;"></a></h1>
-      
-      <!--搜索框-->
-      <div class="search-box fl">
-        <form class="form-search">
-          <div id="search-result" class="select-c fl">
-            <div class="option-win"><b></b><span id="sdefault">北京&nbsp;（Beijing）</span></div>
-            <ul class="option-list">
-              <!--循环项-->
-              <li id="3">北京&nbsp;（Beijing）</li>            </ul>
-          </div>
-          <a class="search-btn fl" href="/index.php/Home/Housing/housingList.html">搜索房源</a>
-        </form>
-      </div>
-  
-  </div>
-  <!-- message part -->
-  <script src="js/jquery-1.8.3.js"></script>
-  <script src="js/jquery.cookie.js"></script>
-  <script src="/Public/Home/layer/layer.js"></script>
-  <script src="js/checkMsg.js?timeStamp=20170408220313"></script>
+						</ul>
+					</li>
+					<li class="n-list">
+						<a href="">喂养知识<i></i></a>
+						<ul>
+							<li><a href="">注意事项</a></li>
+							<li><a href="">喂养常识</a></li>
+							<li><a href="">喂养指南</a></li>
+						</ul>
+					</li>
+					<li class="n-list">
+						<a href="">宠物养护<i></i></a>
+						<ul>
+							<li><a href="">宠物美容</a></li>
+							<li><a href="">清洁</a></li>
+							<li><a href="">宠物看护</a></li>
+						</ul>
+					</li>
+					<li class="n-list">
+						<a href="">宠物收养<i></i></a>
+						<ul>
+							<li><a href="">宠物认领</a></li>
+							<li><a href="">寻宠启示</a></li>
+							<li><a href="">宠物领养</a></li>
+							<li><a href="">宠物配种</a></li>
+						</ul>
+					</li>
+					<li class="n-list">
+						<a href="">光于我们<i></i></a>
+						<ul>
+							<li><a href="">公司简介</a></li>
+							<li><a href="">企业文化</a></li>
+							<li><a href="">经营理念</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="lunbo">
+			<ul class="con">
+				<li>
+					<img src="images/1.jpg" alt="">
+				</li>
+				<li class="none">
+					<img src="images/2.jpg" alt="">	
+				</li>
+				<li class="none">
+					<img src="images/3.jpg" alt="">	
+				</li>
+				<li class="none">
+					<img src="images/4.jpg" alt="">	
+				</li>
+				<li class="none">
+					<img src="images/5.jpg" alt="">	
+				</li>
+				<li class="none">
+					<img src="images/6.jpg" alt="">	
+				</li>
+			</ul>
+			<div class="circle">
+				<ul class="Cir">
+					<li class="indet">1</li>
+					<li>2</li>
+					<li>3</li>
+					<li>4</li>
+					<li>5</li>
+					<li>6</li>
+				</ul>
+			</div>
+			<div class="left">
+				<div class="l_img"><img src="images/w.png" alt=""></div>
+			</div>
+			<div class="right">
+				<div class="r_img"><img src="images/d.png" alt=""></div>
+			</div>
+		</div>
+	</div>
+	<div class="midd">
+		<div class="top">
+			<div class="left"></div>
+			<div class="mid"><p>宠物中心</p><span>Pet center</span></div>
+			<div class="right"></div>
+		</div>
+		<div class="mid-left">
+			<div class="tab">
+				<ul class="tab_ul1">
+					<li class="Li">狗狗</li>
+					<li>猫咪</li>
+				</ul>
+				<div class="Con">
+					<div class="cont1">
+						<div class="ct">
+							<p><a href="">狗狗商城 >></a></p>
+							<ul>
+								<li><a href="">宠物狗粮</a></li>
+								<li><a href="">狗狗零食</a></li>
+								<li><a href="">狗狗沐浴露</a></li>
+								<li><a href="">狗狗美容</a></li>
+								<li><a href="">狗狗玩具</a></li>
+								<li><a href="">狗狗医疗</a></li>
+								<li><a href="">狗狗衣服 </a></li>
+								<li><a href="">狗窝/日用品</a></li>
+								<li><a href="">狗狗保健</a></li>
+							</ul>
+						</div>
+						<div class="ct">
+							<p><a href="">狗狗论坛 >></a></p>
 
-  
-  <!--main content-->
-  <div class="main" role="main">
-    
-    <div class="cont-box clearfix">
-       
-      <!--左侧-->
-            <div class="left-side">
-         <a class="link-box">
-           <ul class="left-msg">
-             <li class="tx-box"><div class="msg touxiang"><img src="http://olv5l4p7e.bkt.clouddn.com/58e752eb1d860.png" style="width:100%;height:100%"></div></li>
-             <li>
-               <ul class="msg basic clearfix">
-                  <li class="fl the-name">santouliubi</li>
-                                      <li class="fl the-gender"  style="background:url(images/icon/gender-icons.png) no-repeat;background-position: 0 0;"></li>                  <!--<li class="fl the-age">0</li>-->
-               </ul>
-             </li>
-             <li style="margin-top: -5px;">
-              <div class="msg speak-lang">
-                Chinese&nbsp;/&nbsp;English&nbsp;/&nbsp;French              </div>
-             </li>
-              <li>
-                <div class="msg professional">IT</div>
-              </li>
-           </ul>         
-         </a>
-                <div class="chat-box">
-                    <a class="chat" tx="1" id="146" ext="51" data-user-info='{"userid":"146","uname":"santouliubi","headpic":"http:\/\/olv5l4p7e.bkt.clouddn.com\/58e752eb1d860.png","sex":"1","career":"IT","lastlogin":"06-28 17:29","flag1":1}'>发起聊天</a>
-                </div>
-         <dl>
-           <dt class="dt-3-28">关于他</dt>
-           <dd class="dd-3-28" id='phones' style="display:none">Swiss professional living and working in Beijing..</dd>
-		   <dd id='phones2' style="display:none">Swiss professional living and working in Beijing..</dd>
-         </dl>                       
-      </div>
-	  <script type="text/javascript">
-		var width=$(window).width();
-		if(width<1000){
-			$('#phones').show();
-		}else{
-			$('#phones2').show();
-		}
-		
-	  </script>
-      <!--右侧-->
-      <div class="right-side">
-        <ul class="detaile-msg">
-          
-          <!--part-->
-          <li>
-            <div class="tit-row clearfix">
-              <h2 class="tit00 fl">Sublet&nbsp;</h2>
-              <div style="background-color: #20B7B6;" class="state fr">待出租</div>
-                          </div>
-            <div class="supplement clearfix">
-              <div class="price fl">4800.00 ￥ / 月</div>
-              <a class="apply fl" id="apply_now">立即申请</a>
-                            <div class="fr date">2017-06-28 最后登录</div>
-            </div>
-            
-          </li>
-          
-          <!--part-->
-          <li class="house-detailed">
-          	
-            <!--rjh add-->
-          	<div class="share-box">
-            	<div class="shares"><b></b>分享到微信</div>
-                <div class="show">
-                	<div class="weixin">
-                    	<div class="tit"><b></b>微信扫描</div>
-                        <img src="images/pic/erweima.jpg" />
-                    </div>
-                    <div class="weibo">
-                    	<a href="javascript:;"><b></b>新浪微博</a>
-                    </div>
-                </div>
-            </div>
-			<script>
-				$('.share').click(function(){
-					$('.show').slideToggle();         	
-				})
-            </script>          
-            <h2 class="tit">房屋详情</h2>
-            
-            <div class="detailed-msg">
-              <ul class="list clearfix">
-                <li class="fl detailed-msg-li">
-                  <dl class="clearfix">
-                    <dt class="fl">type</dt>
-                    <dd class="fl">
-                      合租                                          </dd>
-                  </dl>
-                </li>
-                <li class="fl detailed-msg-li">
-                  <dl class="clearfix">
-                    <dt class="fl">floor：</dt>
-                    <dd class="fl">7+8/8</dd>
-                  </dl>
-                </li>
-                <li class="fl detailed-msg-li">
-                  <dl class="clearfix">
-                    <dt class="fl">rooms：</dt>
-                    <dd class="fl">3 bedrooms, 2 baths</dd>
-                  </dl>
-                </li>
-                <li class="fl detailed-msg-li">
-                  <dl class="clearfix">
-                    <dt class="fl">surface：</dt>
-                    <dd class="fl">165.00</dd>
-                    <dd class="fl">M²</dd>
-                  </dl>
-                </li>
-                <li class="fl detailed-msg-li">
-                  <dl class="clearfix">
-                    <dt class="fl">deposit：</dt>
-                    <dd class="fl">￥</dd>
-                    <dd class="fl">4000.00</dd>
-                  </dl>
-                </li>
-                <li class="fl detailed-msg-li">
-                  <dl class="clearfix">
-                    <dt class="fl">subway：</dt>
-                    <dd class="fl">
-                      <!-- <volist></volist> -->
-                      1号线                                            </dd>
-                  </dl>
-                </li>
-                <li class="fl detailed-msg-li" style="width:100%;">
-                  <dl>
-                    <dt>summary：</dt>
-                    <dd class="supplement">available from AUGUST, a sunny and beautiful room in luxurious duplex apt in Gemdale compound 金地名京小区 next to Sihui subway station. It's just east of Guomao CBD, very convenient to get around, especially in central and eastern city, Sanlitun just 15mins away.
-The room is on the upper floor, with all wooden floor, windows South and West. The apartment is very modern with all amenities and equipments, 2 baths, one per floor, one with bathtub, hi-speed internet, 24h hot water, 24h elevator.
-Although only 3 minutes from subway it's very quiet, no traffic can be heard. The compound is very clean and has good security, there's also all types of stores and businesses there, 24h convenience stores, local 小卖部, two fitness studios (one with swimming pool, the other is 24h), farmer's market, restaurants, hair dressers, banks, etc. Also has two big cinemas and big stores like Carrefour or Walmart in walking distance.
-We are two people living in the other 2 rooms, a Chinese female and a Swiss male. And there's also two cats.
-The apartment is non smoking, at least for the common area.</dd>
-                  </dl>
-                </li>
-              </ul>
-            </div>
-            
-          </li>
-          
-          <!--part-->
-          <li class="house-detailed">
-            <h2 class="tit">房源图片</h2>
-            <div class="house-photos">
-              <ul class="pic-list clearfix gallery">
-                <li class="pic fl"><a style="background:url(http://olv5l4p7e.bkt.clouddn.com/146_source_05923ce53de5b5.jpg);background-size:cover;background-position:center;" href="http://olv5l4p7e.bkt.clouddn.com/146_source_05923ce53de5b5.jpg" rel="prettyPhoto[]"></a></li><li class="pic fl"><a style="background:url(http://olv5l4p7e.bkt.clouddn.com/146_source_15923ce830e4ad.jpg);background-size:cover;background-position:center;" href="http://olv5l4p7e.bkt.clouddn.com/146_source_15923ce830e4ad.jpg" rel="prettyPhoto[]"></a></li><li class="pic fl"><a style="background:url(http://olv5l4p7e.bkt.clouddn.com/146_source_25923cea3f2b86.jpg);background-size:cover;background-position:center;" href="http://olv5l4p7e.bkt.clouddn.com/146_source_25923cea3f2b86.jpg" rel="prettyPhoto[]"></a></li>              </ul>
-            </div>
-            
-          </li>
-          
-          <!--part-->
-          <li class="house-detailed">
-            
-            <h2 class="tit">房源设施</h2>
-            <ul class="icon-box clearfix">
-              <li class="fl">
-                <span class="icon icon01 fl"></span>
-                <span class="icon-text">elevator</span>
-              </li>              <li class="fl">
-                <span class="icon icon02 fl"></span>
-                <span class="icon-text">washing machine</span>
-              </li>                            <li class="fl">
-                <span class="icon icon04 fl"></span>
-                <span class="icon-text">fitness</span>
-              </li>              <li class="fl">
-                <span class="icon icon05 fl"></span>
-                <span class="icon-text">kitchen</span>
-              </li>              <li class="fl">
-                <span class="icon icon06 fl"></span>
-                <span class="icon-text">security</span>
-              </li>              <li class="fl">
-                <span class="icon icon07 fl"></span>
-                <span class="icon-text">heating</span>
-              </li>              <li class="fl">
-                <span class="icon icon08 fl"></span>
-                <span class="icon-text">air conditioning</span>
-              </li>              <li class="fl">
-                <span class="icon icon09 fl"></span>
-                <span class="icon-text">tv</span>
-              </li>              <li class="fl">
-                <span class="icon icon10 fl"></span>
-                <span class="icon-text">wifi</span>
-              </li>              <li class="fl">
-                <span class="icon icon11 fl"></span>
-                <span class="icon-text">bathroom</span>
-              </li>              <li class="fl">
-                <span class="icon icon12 fl"></span>
-                <span class="icon-text">hot water</span>
-              </li>              <li class="fl">
-                <span class="icon icon13 fl"></span>
-                <span class="icon-text">swimming pool</span>
-              </li>              <li class="fl">
-                <span class="icon icon14 fl"></span>
-                <span class="icon-text">parking</span>
-              </li>                            <li class="fl">
-                <span class="icon icon16 fl"></span>
-                <span class="icon-text">living room</span>
-              </li>            </ul>
-            
-          </li>
-          
-          <!--part-->
-          <li class="house-add">
-            <h2 class="tit">地址</h2>
-            <div class="supplement clearfix">
-              <div class="add fl">北京 朝阳区 力源里北街 2号院 // Liyuanli beijie              </div>
-              <div class="add_hidden" style="display:none">
-              北京朝阳区力源里北街 2号院 // Liyuanli beijie              </div>
-            </div>
-            <div class="map-box" id="mapContainer">
-              <!-- <div id="imgMap"><div id="mapContainer"></div></div> -->
-              <!-- <div id="mapContainer"></div> -->
-              <!--<ul class="b-s">
-                <li id="bigger" onClick="cbigger()">+</li>
-                <li id="smaller" onClick="csmaller()">-</li>
-              </ul>-->
-            </div>
-          </li>
-                    
-          <!--part-->
-          <li class="comments">
-            <h2 class="tit">房客评价</h2>
-            <ul class="list">
-                          </ul>
-            <!-- 评论表单 -->
-            <div class="comments-out">
-              <form class="comments-form">
-                <textarea></textarea>
-                <button class="subs" type="button">发表评论</button>
-                <select>
-                  <option value="5">*****</option>
-                  <option value="4">****</option>
-                  <option value="3">***</option>
-                  <option value="2">**</option>
-                  <option value="1">*</option>
-                </select>
-              </form>
-            </div>          </li>
-            
-        </ul>      
-      </div>
-      
-    </div>
-  
-  </div>
-  
-  <!--footer-pc-->
-  <div class="cover-body01">
-  <div class="cover-body-bg01"></div>
-     <!--留言板-->
-  <div class="leave-word">
-     <h2 class="tit">联系方式</h2>
-     <div class="cont">
-       <p class="describe">请填写完整信息，方便我们联系您！</p>
-       <div class="form-elem">
-         <label class="label-tit">姓名：</label>
-         <input name="lmname" class="input-text" type="text" placeholder="请输入您的姓名">
-       </div>
-       <div class="form-elem">
-         <label class="label-tit">电话：</label>
-         <input name="lmphone" class="input-text" type="text" placeholder="请输入您的手机号码">
-       </div>
-       <div class="form-elem">
-         <label class="label-tit">邮箱：</label>
-         <input name="lmemail" class="input-text" type="text" placeholder="请输入您的邮箱地址">
-       </div>
-       <div class="form-elem">
-         <label class="label-tit">主题：</label>
-         <input name="lmproject" class="input-text" type="text" placeholder="请输入">
-       </div>
-       <div class="form-elem">
-         <textarea name="lmcontent" class="textarea1" placeholder="内容"></textarea>
-       </div>
-       <div class="btn-row"><button id="lmsend" class="submit-btn" type="button">发送</button></div>
-     </div>
-     <div class="close"><B></B></div>
-  </div>
+							<ul>
+								<li><a href="">哈士奇</a></li>
+								<li><a href="">狗狗零食</a></li>
+								<li><a href="">狗狗沐浴露</a></li>
+								<li><a href="">狗狗美容</a></li>
+								<li><a href="">狗狗玩具</a></li>
+								<li><a href="">狗狗医疗</a></li>
+								<li class="more"><a href="">更多》</a></li>
 
-</div>
+							</ul>
+						</div>
+					</div>
+					<div class="cont1" id="no">
+						<div class="ct">
+							<p><a href="">猫咪商城 >></a></p>
+							<ul>
+								<li><a href="">宠物猫粮</a></li>
+								<li><a href="">猫猫零食</a></li>
+								<li><a href="">猫猫保健品</a></li>
+								<li><a href="">猫猫香波</a></li>
+								<li><a href="">猫猫玩具</a></li>
+								<li><a href="">毛衣服/猫窝</a></li>
+								<li><a href="">猫猫医疗 </a></li>
+								<li><a href="">美容器材</a></li>
+								<li><a href="">日常用品</a></li>
+							</ul>
+						</div>
+						<div class="ct">
+							<p><a href="">猫咪服务 >></a></p>
 
-<div class="footer-pc">
-     
-    <div class="ft-msg-row">   
-       <div class="inbox">
-        <div class="fl contact-ft"><a class="contact-link" href="#">联系我们</a></div>
-        <ul class="ft-msg fl">
+							<ul>
+								<li><a href="">洗护</a></li>
+								<li><a href="">造型</a></li>
+								<li><a href="">寄养</a></li>
+								<li><a href="">医疗</a></li>
+								<li><a href="">摄影</a></li>
+								<li><a href="">训练</a></li>
+								<li class="more"><a href="">更多》</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="tab">
+				<ul class="tab_ul2">
+					<li>小宠</li>
+					<li class="Li">水族</li>
+				</ul>
+					<div class="Con2">
 
+						<div class="cont2" id="no">
+							<div class="ct">
+								<p><a href="">小宠商城 >></a></p>
+								<ul>
+									<li><a href="">兔兔用品</a></li>
+									<li><a href="">仓鼠用品</a></li>
+									<li><a href="">龙猫用品</a></li>
+									<li><a href="">天竺鼠用品</a></li>
+								</ul>
+							</div>
+							<div class="ct">
+								<p><a href="">小宠百科 >></a></p>
 
+								<ul>
+									<li><a href="">小宠大全</a></li>
+									<li><a href="">小宠饲养</a></li>
+									<li><a href="">小宠训练</a></li>
+									<li><a href="">小宠美容</a></li>
+									<li><a href="">小宠玩具</a></li>
+									<li><a href="">小宠医疗</a></li>
+									<li class="more"><a href="">更多》</a></li>
 
-          
-          <li class="fl">
-            <dl>
-              <dt>公司信息</dt>
-              <dd>
-                  <a class="bt-nav" href="/index.php/Home/Index/aboutme.html">
-                        关于我们                                          </a>
-                </dd>              <dd>
-                    <a class="bt-nav" href="/index.php/Home/Index/offer.html">
-                          常见问题                                            </a>
-                  </dd>              <dd>
-                    <a class="bt-nav" href="/index.php/Home/Index/seviceTerms.html">
-                          服务条款                                            </a>
-                  </dd>              <dd>
-                    <a class="bt-nav" href="/index.php/Home/Index/privacy.html">
-                          公司注册信息                                            </a>
-                  </dd>            </dl>
-          </li>
-          <li class="fl">
-            <dl>
-              <dt>探索和发现</dt>
-              <dd>
-                    <a class="bt-nav" href="/index.php/Home/Index/discount.html">
-                          Join Wellcee group                                            </a>
-                  </dd>              <dd>
-                    <a class="bt-nav" href="/index.php/Home/Index/safety.html">
-                          Important to read !!!                                            </a>
-                  </dd>            </dl>
-          </li>
+								</ul>
+							</div>
+						</div>
+						<div class="cont2">
+							<div class="ct">
+								<p><a href="">水族商城 >></a></p>
+								<ul>
+									<li><a href="">鱼缸/水族缸</a></li>
+									<li><a href="">鱼饲料</a></li>
+									<li><a href="">过滤器</a></li>
+									<li><a href="">过滤材料</a></li>
+									<li><a href="">潜水泵</a></li>
+									<li><a href="">氧气泵</a></li>
+									<li><a href="">清洁工具 </a></li>
+									<li><a href="">照明材料</a></li>
+									<li><a href="">药水系列</a></li>
+									<li><a href="">造景装饰</a></li>
+									<li><a href="">水草肥料</a></li>
+									<li><a href="">喂食器</a></li>
+								</ul>
+							</div>
+							<div class="ct">
+								<p><a href="">水族百科 >></a></p>
 
+								<ul>
+									<li><a href="">水族大全</a></li>
+									<li><a href="">水族饲养</a></li>
+									<li><a href="">水族医疗</a></li>
+									<li><a href="">问答专区</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+			</div>
+			<div class="tab">
+					<ul class="tab_ul1 tab_ul3">
+						<li class="Li">爬虫</li>
+						<li>宠物鸟</li>
+					</ul>
+				<div class="Con Con3">
 
+					<div class="cont1" >
+						<div class="ct">
+							<p><a href="">爬虫商城 >></a></p>
+							<ul>
+								<li><a href="">龟粮</a></li>
+								<li><a href="">龟箱</a></li>
+								<li><a href="">龟缸</a></li>
+								<li><a href="">灯具</a></li>
+								<li><a href="">医疗保健用品</a></li>
+								<li><a href="">造景</a></li>
+								<li><a href="">食具 </a></li>
+								<li><a href="">垫材</a></li>
+							</ul>
+						</div>
+						<div class="ct">
+							<p><a href="">爬虫百科 >></a></p>
 
+							<ul>
+								<li><a href="">爬虫大全</a></li>
+								<li><a href="">爬虫饲养</a></li>
+								<li><a href="">爬虫医疗</a></li>
+								<li><a href="">问答专区</a></li>
+								<li class="more"><a href="">更多》</a></li>
 
+							</ul>
+						</div>
+					</div>
+					<div class="cont1" id="no">
+					<div class="ct">
+						<p><a href="">鸟商城 >></a></p>
+						<ul>
+							<li><a href="">鸟食</a></li>
+							<li><a href="">鸟笼</a></li>
+							<li><a href="">医疗保健</a></li>
+							<li><a href="">鸟食盒</a></li>
+							<li><a href="">清洁工具</a></li>
+							<li><a href="">日常用品</a></li>
+						</ul>
+					</div>
+					<div class="ct">
+						<p><a href="">鸟服务 >></a></p>
 
+						<ul>
+							<li><a href="">造型</a></li>
+							<li><a href="">寄养</a></li>
+							<li><a href="">医疗</a></li>
+							<li><a href="">摄影</a></li>
+							<li><a href="">训练</a></li>
+							<li class="more"><a href="">更多》</a></li>
+						</ul>
+					</div>
+					</div>
+				</div>
+			</div>
+			<div class="tab">
+				<ul class="tab_ul2 tab_ul4">
+					<li>小宠</li>
+					<li class="Li">水族</li>
+				</ul>
+					<div class="Con2 Con4">
 
+						<div class="cont2" id="no">
+							<div class="ct">
+								<p><a href="">小宠商城 >></a></p>
+								<ul>
+									<li><a href="">兔兔用品</a></li>
+									<li><a href="">仓鼠用品</a></li>
+									<li><a href="">龙猫用品</a></li>
+									<li><a href="">天竺鼠用品</a></li>
+								</ul>
+							</div>
+							<div class="ct">
+								<p><a href="">小宠百科 >></a></p>
 
+								<ul>
+									<li><a href="">小宠大全</a></li>
+									<li><a href="">小宠饲养</a></li>
+									<li><a href="">小宠训练</a></li>
+									<li><a href="">小宠美容</a></li>
+									<li><a href="">小宠玩具</a></li>
+									<li><a href="">小宠医疗</a></li>
+									<li class="more"><a href="">更多》</a></li>
 
-          <li class="fl">
-            <dl class="bdsharebuttonbox">
-              <dt>关注我们</dt>
-              <dd class="fl"><a style="padding-left:0;" class="share facebook popup_fbook" data-cmd="fbook" href="#"></a></dd>
-              <dd class="fl">
-                <a style="padding-left:0;" class="share weixin bds_weixin" data-cmd="weixin" href="#"></a>
-              </dd>
-              <dd class="fl"><a style="padding-left:0;" class="share blog-xl bds_tsina" data-cmd="tsina" href="#"></a></dd>
-            </dl>
-          </li>
-          
-        </ul>
-      </div>
-    </div>
-    <div class="copy-row">
-      <span>&copy;wellcee, Inc.</span>
-    </div>
-  
-  </div>
-     <!--  <div class="hhfg-bj"></div>
-      <div class="wenxin911">
-          <a href=""><img src="images/uu888.png"></a>
-      </div>
-      <div class="ewms">
-          <a href=""><img src="images/u911.png"></a>
-      </div> -->
-<script src="js/jquery-1.8.3.js"></script>  
-<script>
-    /*分享设置*/
-    window._bd_share_config={
-         /*通用设置*/
-        "common":{
-            bdSnsKey:{},
-            bdText:"wellcee Rental",
-            bdMini:"2",
-            bdMiniList:false,
-            bdPic:"",
-            onBeforeClick:'',
-            bdStyle:"0",
-            bdSize:"16"
-        },
-        /*分享按钮设置*/
-        "share":{
-           /* bdImg : 0,
-			bdPos : "right",
-			bdTop : 100*/
-        },
-        /*图片分享设置*/
-        "image":{
-            "tag":"img_1",
-            "viewList":["qzone","tsina","tqq","renren","weixin"],
-            "viewText":"分享到：",
-            "viewSize":"16"
-        },
-        /*划词分享设置*/
-        "selectShare":{
-            "bdContainerClass":'text_0',
-            "bdSelectMiniList":[]
-        }
-    };
-    /*js加载*/
-    with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
-</script>
+								</ul>
+							</div>
+						</div>
+						<div class="cont2">
+							<div class="ct">
+								<p><a href="">水族商城 >></a></p>
+								<ul>
+									<li><a href="">鱼缸/水族缸</a></li>
+									<li><a href="">鱼饲料</a></li>
+									<li><a href="">过滤器</a></li>
+									<li><a href="">过滤材料</a></li>
+									<li><a href="">潜水泵</a></li>
+									<li><a href="">氧气泵</a></li>
+									<li><a href="">清洁工具 </a></li>
+									<li><a href="">照明材料</a></li>
+									<li><a href="">药水系列</a></li>
+									<li><a href="">造景装饰</a></li>
+									<li><a href="">水草肥料</a></li>
+									<li><a href="">喂食器</a></li>
+								</ul>
+							</div>
+							<div class="ct">
+								<p><a href="">水族百科 >></a></p>
 
-<div style="display:none;"><script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1260953598'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s11.cnzz.com/z_stat.php%3Fid%3D1260953598%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script></div>
+								<ul>
+									<li><a href="">水族大全</a></li>
+									<li><a href="">水族饲养</a></li>
+									<li><a href="">水族医疗</a></li>
+									<li><a href="">问答专区</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="mid-right">
+				<div class="tab speek">
+					<p>你的评价:</p>
+					<div class="x">		
+							<img src="images/g.png" alt="">
+							<img src="images/g.png" alt="">
+							<img src="images/g.png" alt="">
+							<img src="images/g.png" alt="">
+							<img src="images/g.png" alt="">
+					</div>
+				</div>
+				<div class="tab color">
+					<p>相关推荐</p>
+					<ul class="C_bg">
+						<li><a href="">养蛇视频</a></li>
+						<li><a href="">天外莱客</a></li>
+						<li><a href="">牛头梗</a></li>
+						<li><a href="">宠物药品</a></li>
+						<li><a href="">宠物品种大全</a></li>
+						<li><a href="">宠物的种类</a></li>
+						<li><a href="">热门宠物</a></li>
+					</ul>   
+				</div>
+			</div>
+		</div>
+	<div class="lian">
+			<div class="left"></div>
+			<div class="mid"><p>友情链接</p><span>IM KLIFG</span></div>
+			<div class="right"></div>
+		</div>
+	<div class="footbox">
+		<div class="foot">
+			<ul>
+				<li>
+					<p class="p1">关于我们</p>
+					<p><a href="">关于萌宠</a></p>
+					<p><a href="">加入我们</a></p>
+					<p><a href="">业务合作</a></p>
+				</li>
+				<li>
+					<p class="p1">发现精彩</p>
+					<p><a href="">人气收集</a></p>
+					<p><a href="">最新收集</a></p>
+					<p><a href="">精选图片</a></p>
+				</li>
+				<li>
+					<p class="p1">人气</p>
+					<p><a href="">热门图片墙</a></p>
+					<p><a href="">小组</a></p>
+					<p><a href="">达人堂</a></p>
+				</li>
+				<li>
+					<p class="p1">搜索</p>
+					<p><a href="">站内搜索</a></p>
+					<p><a href="">图片搜索</a></p>
+					<p><a href="">商城</a></p>
+				</li>
+				<li>
+					<p class="p1">更多</p>
+					<p><a href="">站内地图</a></p>
+					<p><a href="">收集工具</a></p>
+					<p><a href="">社区原则</a></p>
+				</li>
+			</ul>
+		</div>
+	</div>
+	
+	
+	<div class="fotbox">
+		<div class="fot"><p>Copyright ©2012-2015 Guju.com.cn, All Rights Reserved. 沪ICP备10036889号 粤公安网备粤公网安备 44010502000010号</p></div>
+	</div>
 
-<script src="js/jquery-1.8.3.js"></script>
-<script>
-  $(".contact-link").click(function(){
-    $(".cover-body01").show();
-    $(".enter-box").hide();
-    $(".login-box").hide();
-    $(".password-back-win").hide();
-    $(".password-modify-win").hide();
-    $(".leave-word").show();
-  })
-  $(".cover-body-bg01").click(function(){
-    $(".cover-body01").hide();
-  })
-  $(".leave-word .close").click(function(){
-    $(".cover-body01").hide();
-  })
-</script>
-<script type="text/javascript">
-  $("#lmsend").click(function(){
-      var filter1   = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-      var filter2   = /^[0-9]*$/;
-      var lmname    = $("[name='lmname']").val();
-      var lmphone   = $("[name='lmphone']").val();
-      var lmemail   = $("[name='lmemail']").val();
-      var lmproject = $("[name='lmproject']").val();
-      var lmcontent = $("[name='lmcontent']").val();
-      if(lmname == ''){
-          //姓名必填
-          $("[name='lmname']").attr("placeholder","姓名必填");
-          return false;
-      }
-      if(lmphone == ''){
-          //电话必填
-          $("[name='lmphone']").attr("placeholder","电话必填");
-          return false;
-      }
-      if(!filter2.test(lmphone)){
-          //手机格式不正确
-          $("[name='lmphone']").val("");
-          $("[name='lmphone']").attr("placeholder","手机格式不正确");
-          return false;
-      }
-      if(lmemail == ''){
-          //邮箱必填
-          $("[name='lmemail']").attr("placeholder","邮箱必填");
-          return false;
-      }
-      if(!filter1.test(lmemail)){
-          //邮箱格式不正确
-          $("[name='lmemail']").val("");
-          $("[name='lmemail']").attr("placeholder","邮箱格式不正确");
-          return false;
-      }
-      if(lmproject == ''){
-          //主题必填
-          $("[name='lmproject']").attr("placeholder","主题必填");
-          return false;
-      }
-      if(lmcontent == ''){
-          //内容必填
-          $("[name='lmcontent']").attr("placeholder","内容必填");
-          return false;
-      }
-      $.post(
-          "/index.php/Home/User/lmsg.html",
-          {"lmname":lmname,"lmphone":lmphone,"lmemail":lmemail,"lmproject":lmproject,"lmcontent":lmcontent},
-          function(data){
-              if(data==1){
-                  $("[name='lmproject']").val("");
-                  $("[name='lmcontent']").val("");
-                  $(".cover-body01").hide();
-                  $(this).parents(".leave-word").hide();
-                  alert("留言成功");
-              }else{
-                  $(".cover-body01").hide();
-                  $(this).parents(".leave-word").hide();
-              }
-          }
-      )
-  })
-</script>
-
-
-<!-- 初始化 - 站内信配置 -->
-<div id="layer_webim">
-    <iframe id="iframe_webim" src="/index.php/Home/Message/index.html" frameborder="0"></iframe>
-</div>
-<style>
-    #layer_webim {
-        position: fixed;
-        z-index: 9999;
-        overflow: hidden;
-        background: rgba(0, 0, 0, .5);
-        box-shadow: 0 0 10px rgba(0, 0, 0, .38);
-        /*transition: all .8s ease-out;*/
-    }
-
-    #layer_webim.hide {
-        bottom: 10px;
-        right: 10px;
-        width: 1px;
-        height: 1px;
-        visibility: hidden;
-    }
-
-    #layer_webim.show {
-        bottom: 10px;
-        right: 10px;
-        width: 800px;
-        height: 480px;
-        visibility: visible;
-    }
-
-    #layer_webim > iframe {
-        width: 800px;
-        height: 480px;
-    }
-</style>
-<script>
-    /**
-     * 显示 Message 聊天窗口
-     * @param autoLoadMessage 是否在显示聊天窗口的同时, 加载窗口中第一个对话框里的聊天记录
-     */
-    function showMessageWindow(autoLoadMessage) {
-        // 初始化第一个对话框里的聊天记录数据
-        var iframeMessageWindow = document.getElementById('iframe_webim').contentWindow;
-        if (iframeMessageWindow && iframeMessageWindow.angular && iframeMessageWindow.angular.element('[ng-controller="messageController"]') && iframeMessageWindow.angular.element('[ng-controller="messageController"]').scope() && !iframeMessageWindow.angular.element('[ng-controller="messageController"]').scope().isLoading) {
-            $('#layer_webim').removeClass('hide').addClass('show');
-            if (autoLoadMessage) {
-                var messageAppScope = iframeMessageWindow.angular.element('[ng-controller="messageController"]').scope();
-                var firstDialogueItem = messageAppScope.currentDialogueList[0];
-                if (firstDialogueItem) {
-                    messageAppScope.currentDialogueID = firstDialogueItem.id;
-                    messageAppScope.currentToUserID = firstDialogueItem.userid;
-                    messageAppScope.currentDialogueIndex = 0;
-                    messageAppScope.needShowProfile = firstDialogueItem.flag1;
-                    messageAppScope.loadCurrentDialogueData(messageAppScope.ACTION_DIALOGUE_INIT);
-                }
-            }
-        } else {
-            layer.msg('IM Loading...');
-        }
-
-    }
-    /**
-     * 隐藏 Message 聊天窗口
-     */
-    function hideMessageWindow() {
-        $('#layer_webim').addClass('hide').removeClass('show');
-    }
-</script>  
-</div>
-
-<!--javascript-->
-<script src="js/jquery-1.8.3.js"></script>
-<script src="js/jquery.cycle2.min.js"></script>
-<script src="http://ditu.google.cn/maps/api/js?key=AIzaSyClPRxBwWKX0rqdIr0M6aDxlX_FYgHle2M&language="></script>
-<script src="js/jquery.cookie.js"></script>
-<script src="/Public/Home/layer/layer.js"></script>
-<script src="js/select-copy.js"></script>
-<script src="js/login.js"></script>
-<script src="js/jquery.prettyphoto.js"></script>
-
-
-
-<!-- 高德地图 -->
-<script src="http://cache.amap.com/lbs/static/es5.min.js"></script>
-<script src="http://webapi.amap.com/maps?v=1.3&key=12ece8035a579711304f51ab21ce5bd9"></script>
-<script type="text/javascript" src="http://webapi.amap.com/maps?v=1.3&key=12ece8035a579711304f51ab21ce5bd9&plugin=AMap.Geocoder"></script>
-<script type="text/javascript" src="http://cache.amap.com/lbs/static/addToolbar.js"></script>
-
-<script>
-      
-     var language = 'zh-CN';
-     if(language=='en-us'){
-            // 定义地图的中心
-           var map = new AMap.Map('mapContainer', {
-              resizeEnable: true,
-               lang:'en'
-          });
-     }else{
-              // 定义地图的中心
-           var map = new AMap.Map('mapContainer', {
-              resizeEnable: true,
-               lang:'zh'
-          });
-     }
-     var cityName = '北京市';
-      
-      map.setCity(cityName);
-      var dizhi="力源里北街2号院/ liyuanli北街";
-      geocoder(dizhi);
-   function geocoder(data) {
-        var geocoder = new AMap.Geocoder({
-            city: "010", //城市，默认：“全国”
-            radius: 1000 //范围，默认：500
-        });
-        //地理编码,返回地理编码结果
-        geocoder.getLocation(data, function(status, result) {
-            if (status === 'complete' && result.info === 'OK') {
-                geocoder_CallBack(result);
-            }
-        });
-    }
-    function addMarker(i, d) {
-        var marker = new AMap.Marker({
-            map: map,
-            position: [ d.location.getLng(),  d.location.getLat()],
-			icon: new AMap.Icon({            
-				//size: new AMap.Size(55, 55),  //图标大小
-				image: 'http://lbs.amap.com/console/public/show/marker.png',
-				imageOffset: new AMap.Pixel(0, 0)
-			}) 
-        });
-    }
-    //地理编码返回结果展示
-    function geocoder_CallBack(data) {
-        var resultStr = "";
-        //地理编码结果数组
-        var geocode = data.geocodes;
-        for (var i = 0; i < geocode.length; i++) {
-            //拼接输出html
-            resultStr += "<span style=\"font-size: 12px;padding:0px 0 4px 2px; border-bottom:1px solid #C1FFC1;\">" + "<b>地址</b>：" + geocode[i].formattedAddress + "" + "&nbsp;&nbsp;<b>的地理编码结果是:</b><b>&nbsp;&nbsp;&nbsp;&nbsp;坐标</b>：" + geocode[i].location.getLng() + ", " + geocode[i].location.getLat() + "" + "<b>&nbsp;&nbsp;&nbsp;&nbsp;匹配级别</b>：" + geocode[i].level + "</span>";
-            addMarker(i, geocode[i]);
-        }
-        map.setFitView();
-    }
-
-
-  </script>
-
-<script type="text/javascript">
-      $(".subs").click(function(){
-          var uid = "239";
-                    if(uid==0){
-              $(".login").click();
-              return false;
-          }
-          var id = '51';
-          var content = $(this).prev().val();
-          var point = $(this).next().val();
-          if(content!==''){
-             window.location.href="/index.php/Home/User/comments/point/"+point+"/flag/3/content/"+content+"/id/"+id;
-          }else{
-             alert("评论不能为空");//内容为空
-          }
-      })
-</script>
-<script type="text/javascript">
- 
-  $(function(){
-    $("area[rel^='prettyPhoto']").prettyPhoto();
-    $(".gallery:first a[rel^='prettyPhoto']").prettyPhoto({animation_speed:'fast',slideshow:10000, hideflash: true});  
-   
-  var h_pic = $(".cont-box .right-side .pic-list .pic");
-  //document.title = h_pic.length;
-  if(h_pic.length == 1){
-    h_pic.width(695 + '%px');
-    h_pic.height(400 + 'px');
-  }else if(h_pic.length == 2){
-    h_pic.width(340 + 'px');
-    h_pic.height(240 + 'px');
-  }
-  else if(h_pic.length == 3){
-    h_pic.width(225 + 'px');
-    h_pic.height(145 + 'px');
-    h_pic.eq(0).width(455 + 'px');
-    h_pic.eq(0).height(305 + 'px');
-  }
-  else if(h_pic.length == 4){
-    h_pic.width(221.67 + 'px');
-    h_pic.height(140 + 'px');
-    h_pic.eq(0).width(695 + 'px');
-    h_pic.eq(0).height(400 + 'px');
-  }
-  else if(h_pic.length == 5){
-    h_pic.eq(1).width(225 + 'px');
-    h_pic.eq(1).height(145 + 'px');
-    h_pic.eq(2).width(225 + 'px');
-    h_pic.eq(2).height(145 + 'px');
-    h_pic.eq(0).width(455 + 'px');
-    h_pic.eq(0).height(305 + 'px');
-    h_pic.eq(3).width(340 + 'px');
-    h_pic.eq(3).height(220 + 'px');
-    h_pic.eq(4).width(340 + 'px');
-    h_pic.eq(4).height(220 + 'px');
-  }
-  else if(h_pic.length == 6){
-    h_pic.eq(1).width(225 + 'px');
-    h_pic.eq(1).height(125 + 'px');
-    h_pic.eq(2).width(225 + 'px');
-    h_pic.eq(2).height(125 + 'px');
-    h_pic.eq(0).width(455 + 'px');
-    h_pic.eq(0).height(265 + 'px');
-    h_pic.eq(4).width(455 + 'px');
-    h_pic.eq(4).height(265 + 'px');
-    h_pic.eq(4).css('float','right'); 
-    h_pic.eq(3).width(225 + 'px');
-    h_pic.eq(3).height(125 + 'px');
-    h_pic.eq(5).width(225 + 'px');
-    h_pic.eq(5).height(125 + 'px');
-  }
-  else if(h_pic.length == 7){
-    h_pic.width(340 + 'px');
-    h_pic.height(200 + 'px');
-    h_pic.eq(0).width(455 + 'px');
-    h_pic.eq(0).height(265 + 'px');
-    h_pic.eq(1).width(225 + 'px');
-    h_pic.eq(1).height(125 + 'px');
-    h_pic.eq(2).width(225 + 'px');
-    h_pic.eq(2).height(125 + 'px');
-  }
-  else if(h_pic.length == 8){
-    h_pic.width(166 + 'px');
-    h_pic.height(100 + 'px');
-    h_pic.eq(0).width(333 + 'px');
-    h_pic.eq(0).height(215 + 'px');
-    h_pic.eq(5).width(221.67 + 'px');
-    h_pic.eq(5).height(130 + 'px');
-    h_pic.eq(6).width(221.67 + 'px');
-    h_pic.eq(6).height(130 + 'px');
-    h_pic.eq(7).width(221.67 + 'px');
-    h_pic.eq(7).height(130 + 'px');
-  }
-  else if(h_pic.length == 9){
-    h_pic.width(225 + 'px');
-    h_pic.height(125 + 'px');
-    h_pic.eq(0).width(455 + 'px');
-    h_pic.eq(0).height(265 + 'px');
-    h_pic.eq(4).width(455 + 'px');
-    h_pic.eq(4).height(265 + 'px');
-    h_pic.eq(4).css('float','right');
-    h_pic.eq(6).width(455 + 'px');
-    h_pic.eq(6).height(265 + 'px');
-  }else {
-    h_pic.width(166 + 'px');
-    h_pic.height(100 + 'px');
-    h_pic.eq(0).width(333 + 'px');
-    h_pic.eq(0).height(215 + 'px');
-    h_pic.eq(6).width(333 + 'px');
-    h_pic.eq(6).height(215 + 'px');
-    h_pic.eq(9).css({"position":"absolute","bottom":"0","left":"0"});
-  }
-})
-
-</script>
-<!-- 发起聊天开始 -->
-<script type="text/javascript">
-  uid = "239";
-  $(".chat").click(function(){
-      if(uid==""){
-        $(".login").click();
-      }else if($(this).attr("tx")==0){
-        window.location.href="/index.php/Home/User/mineDataMessage.html"; 
-      }else{
-        if($(window).width() > 1000){
-          $.cookie('isMobile',0,{ expires: 1, path: '/' });
-        }else{
-          $.cookie('isMobile',1,{ expires: 1, path: '/' }); 
-        }
-        var rid = $(this).attr('id');
-        if(uid==rid){return 0;}
-        var hid = $(this).attr('ext');
-
-
-            // 初始化点击创建聊天(对话框)时, 所需要的此用户相关信息
-            var userInfo = JSON.parse($(this).attr('data-user-info'));
-            // 初始化需要传递给聊天框的数据
-            var parentWindowMessage = '{"action": "newDialogue", "userInfo": ' + JSON.stringify(userInfo) + '}';
-            // 如果是移动端, 将所需数据通过 url 传递过去
-        if($.cookie('isMobile') == 1){
-                location.href = '/index.php/Home/Message/index.html?deviceType=mobile&parentWindowMessage=' + encodeURIComponent(parentWindowMessage);
-           return 0;
-         }
-            // 如果是 PC 端, 则数据通过 postMessage 传递
-            var iframeMessageWindow = document.getElementById('iframe_webim').contentWindow; // 初始化聊天窗口的 window 对象
-            if (iframeMessageWindow && iframeMessageWindow.angular && !iframeMessageWindow.angular.element('[ng-controller="messageController"]').scope().isLoading) {
-                showMessageWindow();
-                iframeMessageWindow.postMessage(parentWindowMessage, '*');
-            } else {
-                layer.msg('IM Loading...');
-            }
-
-      }
-  })
-
-  $("#apply_now").click(function(){
-    //var uid = "239";
-      if(uid==""){
-        $(".login").click();
-      }else{
-        if(uid==$(".chat").attr('id')){return 0;}
-        if($(window).width() > 1000){
-            $.cookie('isMobile',1,{ expires: 1, path: '/' });
-          //letwechat();
-        }else{
-          $.cookie('isMobile',0,{ expires: 1, path: '/' }); 
-        }
-        location.href="/index.php/Home/User/payPageMessage/houseid/51.html";
-    }
-  })
-</script>
-
-<script type="text/javascript"> 
-  // function  initialize(){
-  // var mapType = google.maps.MapTypeId.ROADMAP;
-  // var lat = 39.915168, lng = 116.403875, zoom = 15;
-  // var mapOptions = {
-  //     center: new google.maps.LatLng(lat, lng),  //地图的中心点
-  //     zoom: zoom,               　　　　　　　　　　//地图缩放比例
-  //    // mapTypeId: mapType,      　　　　　　　　　 　//指定地图展示类型：卫星图像、普通道路
-  //     scrollwheel: true          　　　　　　　　　 //是否允许滚轮滑动进行缩放
-  
-  // };
-  // map = new google.maps.Map(document.getElementById("imgMap"), mapOptions); 
-  //  //在地图上标记了一个地理位置图
-  // var address = $(".house-add ").find(".add_hidden").html();
-  // geocoder = new google.maps.Geocoder();
-  // geocoder.geocode( { 'address': address}, function(results, status) { 
-  //     console.log(results[0].geometry.location) 
-  //     map.setCenter(results[0].geometry.location); 
-  //     //alert(results[0].geometry.location);
-  //     var mapOptions = {
-  //         center: new google.maps.LatLng(results[0].geometry.location.lat(), results[0].geometry.location.lng()),  //地图的中心点
-  //         zoom: zoom,               　　　　　　　　　　//地图缩放比例
-  //        // mapTypeId: mapType,      　　　　　　　　　 　//指定地图展示类型：卫星图像、普通道路
-  //         scrollwheel: true          　　　　　　　　　 //是否允许滚轮滑动进行缩放
-  //     };
-      
-  //     var marker = new google.maps.Marker({
-  //     map: map,
-  //     position: new google.maps.LatLng(results[0].geometry.location.lat(), results[0].geometry.location.lng())
-  //     });
-  // });
-
-  // }
-</script>
-<script>
-  var titleHtml = $(".right-side .tit00").html();
-  $("title").html("Wellcee : " + titleHtml);
-</script>
-<script type="text/javascript">
-    $("#sub1").click(function(){
-        var user = $("[name='user']").val();
-        var pwd = $("[name='pwd']").val();
-        if(user==""){
-            $("[name='user']").css({"border":"#d23636 1px solid","color":"#d23636"});
-            $("[name='user']").val("请输入手机号或邮箱账号！！");//请输入手机号或邮箱账号！！
-            $("[name='user']").focus(function(){
-               $("[name='user']").css({"border":"#f3f3f3 1px solid","color":"#333"});
-               $("[name='user']").val("");
-            })
-            return false;
-        };
-        if(pwd==""){
-            $("[name='pwd']").css({"display":"none"});
-            $("[name='pwd01']").css({"display":"block"});
-            $("[name='pwd01']").focus(function(){
-                $("[name='pwd01']").css({"display":"none"});
-                $("[name='pwd']").css({"display":"block"});
-                $("[name='pwd']").focus();
-            });
-            return false;            
-        };
-        $.post(
-            "/index.php/Home/User/userLogin.html",
-            {"user":user,"pwd":pwd},
-            function(data){
-                if(data==1){
-                    window.location.href="/index.php/Home/User/select.html";
-                }else if(data==2){
-                    location.reload();
-                }else if(data==-1){
-                    $("[name='user']").css({
-                        "border":"#d23636 1px solid",
-                        "color":"#d23636",
-                        });
-                    $("[name='user']").val("用户名或密码错误！！");//用户名或密码错误！！
-                    $("[name='user']").focus(function(){
-                       $("[name='user']").css({
-                           "border":"#f3f3f3 1px solid",
-                           "color":"#333"
-                           });
-                       $("[name='user']").val("");
-                    })
-                }else if(data==-2){
-                    $("[name='user']").css({
-                        "border":"#d23636 1px solid",
-                        "color":"#d23636",
-                        });
-                    $("[name='user']").val("请输入账号或密码！！");//请输入账号或密码！！
-                    $("[name='user']").focus(function(){
-                       $("[name='user']").css({
-                           "border":"#f3f3f3 1px solid",
-                           "color":"#333"
-                           });
-                       $("[name='user']").val("");
-                    })
-                }else{
-                    $("[name='user']").css({
-                        "border":"#d23636 1px solid",
-                        "color":"#d23636",
-                        });
-                    $("[name='user']").val("对不起您的手机号／邮箱 被限制登录 Wellcee");//账号已经加入黑名单，联系管理员
-                    $("[name='user']").focus(function(){
-                       $("[name='user']").css({
-                           "border":"#f3f3f3 1px solid",
-                           "color":"#333"
-                           });
-                       $("[name='user']").val("");
-                    })
-
-                }
-            }   
-        )
-    })
-    //发送验证码
-    $(".catch").click(function(){
-        var iso=$("[name='iso']").val();
-        var phone=$("[name='mobile']").val();
-        var filter2 = /^[0-9]*$/;
-        if(!filter2.test(phone)){
-            $("[name='mobile']").css({"border":"#d23636 1px solid","color":"#d23636"});
-            $("[name='mobile']").val("您输入的手机号码格式不正确！！");//您的手机号码格式不正确！！
-            $("[name='mobile']").focus(function(){
-               $("[name='mobile']").css({"border":"#f3f3f3 1px solid","color":"#333"});
-               $("[name='mobile']").val("");
-            })
-            return false;
-        }
-        $.post(
-            "/index.php/Home/User/sendCode.html",
-            {'phone':phone,'iso':iso},
-            function(data){
-                if(data==1){
-                    var wait=60;
-                    function timeSub(o){
-                      if(wait == 0){
-                          o.removeAttr("disabled");
-                          o.val("重新发送");//重新发送
-                          wait = 60; 
-                      }else{ 
-                          o.attr("disabled","disabled");  
-                          o.val("重新发送(" + wait +")");//重新发送
-                          wait--;  
-                          setTimeout(function() {  
-                              timeSub(o);  
-                          },  
-                          1000)  
-                      }  
-                    }
-                    timeSub($(".catch"));
-                }else if(data==-1){
-                    $("[name='vcode']").css({"border":"#d23636 1px solid","color":"#d23636"});
-                    $("[name='vcode']").val("请重新发送验证码！！");//请重新发送验证码！！
-                    $("[name='vcode']").focus(function(){
-                       $("[name='vcode']").css({"border":"#f3f3f3 1px solid","color":"#333"});
-                       $("[name='vcode']").val("");
-                    })
-                }else{
-                    alert(data);
-                    var wait=60;
-                    function timeSub(o){
-                      if(wait == 0){
-                          o.removeAttr("disabled");
-                          o.val("重新发送");//重新发送
-                          wait = 60; 
-                      }else{ 
-                          o.attr("disabled","disabled");  
-                          o.val("重新发送(" + wait +")");//重新发送
-                          wait--;  
-                          setTimeout(function() {  
-                              timeSub(o);  
-                          },  
-                          1000)  
-                      }  
-                    }
-                    timeSub($(".catch"));
-                }
-            }
-        )
-    })
-    //检测手机号码是否已被占用
-    $("[name='mobile']").blur(function(){
-        if($(this).val()==""){
-            $("[name='mobile']").css({"border":"#d23636 1px solid","color":"#d23636"});
-            $("[name='mobile']").val("请输入手机号码！！");//请输入手机号码！！
-            $("[name='mobile']").focus(function(){
-                $("[name='mobile']").css({"border":"#f3f3f3 1px solid","color":"#333"});
-                $("[name='mobile']").val("");
-            });
-            return false;
-        }
-        $.post(
-            "/index.php/Home/User/isPhone.html",
-            {"mobile":$(this).val()},
-            function(data){
-                if(data==-1){
-                    $("[name='mobile']").css({"border":"#d23636 1px solid","color":"#d23636"});
-                    $("[name='mobile']").val("该手机号已被占用！！");//该手机号已被占用！！
-                    $("[name='mobile']").focus(function(){
-                       $("[name='mobile']").css({"border":"#f3f3f3 1px solid","color":"#333"});
-                       $("[name='mobile']").val("");
-                    });
-                    return false;
-                }else if(data==1){
-                    //该手机号可以使用
-                    return true;
-                }
-            }
-        )
-    });
-    //检验短信验证码是否正确
-    $("[name='vcode']").blur(function(){
-        var phone=$("[name='mobile']").val();
-        if(phone==""){
-            $("[name='mobile']").css({"border":"#d23636 1px solid","color":"#d23636"});
-            $("[name='mobile']").val("请输入手机号码！！");//请输入手机号码！！
-            $("[name='mobile']").focus(function(){
-               $("[name='mobile']").css({"border":"#f3f3f3 1px solid","color":"#333"});
-               $("[name='mobile']").val("");
-            });
-            return false;
-        }
-        if($(this).val()==""){
-            $("[name='vcode']").css({"border":"#d23636 1px solid","color":"#d23636"});
-            $("[name='vcode']").val("请输入验证码！！");//请输入验证码！！
-            $("[name='vcode']").focus(function(){
-               $("[name='vcode']").css({"border":"#f3f3f3 1px solid","color":"#333"});
-               $("[name='vcode']").val("");
-            });
-            return false;
-        }
-        $.post(
-            "/index.php/Home/User/checkCord.html",
-            {"code":$(this).val(),"phone":phone},
-            function(data){
-                if(data==1){
-                    //验证码正确
-                    $("[name='hid']").val("1");
-                    $("[name='mobile1']").val(phone);
-                    return true;
-                }else if(data==2){
-                    //验证码错误
-                    $("[name='hid']").val("2");
-                    $("[name='mobile1']").val("");
-                    $("[name='vcode']").css({"border":"#d23636 1px solid","color":"#d23636"});
-                    $("[name='vcode']").val("验证码错误！！");//验证码错误！！
-                    $("[name='vcode']").focus(function(){
-                       $("[name='vcode']").css({"border":"#f3f3f3 1px solid","color":"#333"});
-                       $("[name='vcode']").val("");
-                    });
-                    return false;
-                }else if(data==3){
-                    //请重新发送验证码
-                    $("[name='hid']").val("3");
-                    $("[name='mobile1']").val("");
-                    $("[name='vcode']").css({"border":"#d23636 1px solid","color":"#d23636"});
-                    $("[name='vcode']").val("请重新发送验证码！！");//请重新发送验证码！！
-                    $("[name='vcode']").focus(function(){
-                       $("[name='vcode']").css({"border":"#f3f3f3 1px solid","color":"#333"});
-                       $("[name='vcode']").val("");
-                    });
-                    return false;
-                }
-            }
-        )
-    })
-    //检测邮箱是否被占用
-    $("[name='email']").blur(function(){
-        if($(this).val()==""){
-            //邮箱地址不能为空
-            $("[name='email']").css({"border":"#d23636 1px solid","color":"#d23636"});
-            $("[name='email']").val("请输入邮箱地址！！");//请输入邮箱地址！！
-            $("[name='email']").focus(function(){
-               $("[name='email']").css({"border":"#f3f3f3 1px solid","color":"#333"});
-               $("[name='email']").val("");
-            });
-            return false;
-        }
-        $.post(
-            "/index.php/Home/User/isEmail.html",
-            {"email":$(this).val()},
-            function(data){
-                if(data==-1){
-                    //该邮箱地址已被占用
-                    $("[name='email']").css({"border":"#d23636 1px solid","color":"#d23636"});
-                    $("[name='email']").val("该邮箱地址已被占用！！");//该邮箱地址已被占用！！
-                    $("[name='email']").focus(function(){
-                       $("[name='email']").css({"border":"#f3f3f3 1px solid","color":"#333"});
-                       $("[name='email']").val("");
-                    });
-                    return false;
-                }else if(data==1){
-                    //该手机号可以使用
-                    return true;
-                }
-            }
-        )
-    });
-    $("#sub2").click(function(){
-        var iso = $("[name='iso']").val();
-        var uname = $("[name='uname']").val();
-        var mobile = $("[name='mobile']").val();
-        var mobile1 = $("[name='mobile1']").val();
-        var email = $("[name='email']").val();
-        var pwd = $("#np1").val()
-        var pwd1 = $("#np2").val()
-        var filter  = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-        var filter1 = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,18}$/;
-        var filter2 = /^[0-9]*$/;
-        var email1='';
-        if (iso=='') {
-          iso='+86';
-        };
-        if($("#catch01-checkbox").attr('checked')=='checked'){
-            email1=email;
-        }
-        if(uname==""){
-            //用户名不能为空
-            $("[name='uname']").css({"border":"#d23636 1px solid","color":"#d23636"});
-            $("[name='uname']").val("请输入用户名！！");//请输入用户名！！
-            $("[name='uname']").focus(function(){
-               $("[name='uname']").css({"border":"#f3f3f3 1px solid","color":"#333"});
-               $("[name='uname']").val("");
-            });
-            return false;
-        }
-        if(mobile==""){
-            //电话号码不能为空
-            $("[name='mobile']").css({
-                "border":"#d23636 1px solid",
-                "color":"#d23636",
-                });
-            $("[name='mobile']").val("请输入手机号码！！");//请输入手机号码！！
-            $("[name='mobile']").focus(function(){
-               $("[name='mobile']").css({"border":"#f3f3f3 1px solid","color":"#333"});
-               $("[name='mobile']").val("");
-            });
-            return false;
-        }
-		if(mobile.indexOf(' ')>-1){
-			$("[name='mobile']").css({"border":"#d23636 1px solid","color":"#d23636"});
-            $("[name='mobile']").val("请不要输入空格键");//您的手机号码格式不正确！！
-            $("[name='mobile']").focus(function(){
-               $("[name='mobile']").css({"border":"#f3f3f3 1px solid","color":"#333"});
-               $("[name='mobile']").val("");
-            });
-            return false;
-		}else if(!filter2.test(mobile)){
-            $("[name='mobile']").css({"border":"#d23636 1px solid","color":"#d23636"});
-            $("[name='mobile']").val("您输入的手机号码格式不正确！！");//您的手机号码格式不正确！！
-            $("[name='mobile']").focus(function(){
-               $("[name='mobile']").css({"border":"#f3f3f3 1px solid","color":"#333"});
-               $("[name='mobile']").val("");
-            });
-            return false;
-        }
-        if(email==""){
-            //邮箱地址不能为空
-            $("[name='email']").css({"border":"#d23636 1px solid","color":"#d23636"});
-            $("[name='email']").val("请输入邮箱地址！！");//请输入邮箱地址！！
-            $("[name='email']").focus(function(){
-               $("[name='email']").css({"border":"#f3f3f3 1px solid","color":"#333"});
-               $("[name='email']").val("");
-            });
-            return false;
-        }
-        if(!filter.test(email)){
-            $("[name='email']").css({"border":"#d23636 1px solid","color":"#d23636"});
-            $("[name='email']").val("您的电子邮件格式不正确！！");//您的电子邮件格式不正确！！
-            $("[name='email']").focus(function(){
-               $("[name='email']").css({"border":"#f3f3f3 1px solid","color":"#333"});
-               $("[name='email']").val("");
-            });
-            return false;
-        }
-        if(pwd==""){
-            //密码不能为空
-            $("#np1").css({"display":"none"});
-            $("#np11").css({"display":"block"});
-            $("#np11").focus(function(){
-                $("#np11").css({"display":"none"});
-                $("#np1").css({"display":"block"});
-                $("#np1").focus();
-            });
-            return false;
-        }
-        if(!filter1.test(pwd)){
-            $("#np1").css({"display":"none"});
-            $("#np11").css({"display":"block"});
-            $("#np11").val("密码由字母、数字或下划线组成，且在6-18位之间");//密码由字母、数字或下划线组成，且在6-18位之间
-            $("#np11").focus(function(){
-                $("#np11").css({"display":"none"});
-                $("#np1").css({"display":"block"});
-                $("#np1").focus();
-            });
-            return false;
-        }
-        if(pwd1==""){
-            //确认密码不能为空
-            $("#np2").css({"display":"none"});
-            $("#np21").css({"display":"block"});
-            $("#np21").focus(function(){
-                $("#np21").css({"display":"none"});
-                $("#np2").css({"display":"block"});
-                $("#np2").focus();
-            });
-            return false;
-        }
-        if(pwd!==pwd1){
-            //两次密码不相同
-            $("#np2").css({"display":"none"});
-            $("#np21").css({"display":"block"});
-            $("#np21").val("输入的两次密码不相同");//输入的两次密码不相同
-            $("#np21").focus(function(){
-                $("#np21").css({"display":"none"});
-                $("#np2").css({"display":"block"});
-                $("#np2").focus();
-            });
-            return false;
-        }
-        if($("#checkbox-login").attr('checked')!='checked'){
-            $(".terms-read").html("请阅读并同意使用条款");//请阅读并同意使用条款
-            $(".terms-read").css({"color":"#d23636"});
-            $("#checkbox-login").change(function(){
-              $(".terms-read").html("我已阅读使用条款");//我已阅读使用条款
-              $(".terms-read").css({"color":"#333"});
-            })
-            return false;
-        }
-        if($("[name='hid']").val()==0){
-            $("[name='vcode']").css({"border":"#d23636 1px solid","color":"#d23636"});
-            $("[name='vcode']").val("请点击发送验证码！！");//请点击发送验证码！！
-            $("[name='vcode']").focus(function(){
-                $("[name='vcode']").css({"border":"#f3f3f3 1px solid","color":"#333"});
-                $("[name='vcode']").val("");
-            });
-            return false;
-        }
-        if($("[name='hid']").val()==2){
-            $("[name='vcode']").css({"border":"#d23636 1px solid","color":"#d23636"});
-            $("[name='vcode']").val("验证码错误！！");//恭喜您注册成功！
-            $("[name='vcode']").focus(function(){
-               $("[name='vcode']").css({"border":"#f3f3f3 1px solid","color":"#333"});
-               $("[name='vcode']").val("");
-            });
-            return false;
-        }
-        if($("[name='hid']").val()==3){
-            $("[name='vcode']").css({"border":"#d23636 1px solid","color":"#d23636"});
-            $("[name='vcode']").val("请重新发送验证码！！");//请重新发送验证码！！
-            $("[name='vcode']").focus(function(){
-               $("[name='vcode']").css({"border":"#f3f3f3 1px solid","color":"#333"});
-               $("[name='vcode']").val("");
-            });
-            return false;
-        }
-        $.post(
-            "/index.php/Home/User/userRegister.html",
-            {"uname":uname,"mobile":mobile,"email":email,"email1":email1,"mobile1":mobile1,"pwd":pwd,'iso':iso},
-            function(data){
-                if(data==1){
-                    $(".cover-body").hide();
-                    alert("恭喜您注册成功！");//恭喜您注册成功！
-                    $(".cover-body").hide();
-                    location.reload();
-                }else if(data==-1){
-                    alert("请完善您的个人资料！！");//请完善您的个人资料！！
-                }else if(data==-2){
-                    $("[name='mobile']").css({"border":"#d23636 1px solid","color":"#d23636"});
-                    $("[name='mobile']").val("手机格式错误！！");//手机格式错误！！
-                    $("[name='mobile']").focus(function(){
-                       $("[name='mobile']").css({"border":"#f3f3f3 1px solid","color":"#333"});
-                       $("[name='mobile']").val("");
-                    });
-                }else if(data==-3){
-                    $("[name='email']").css({"border":"#d23636 1px solid","color":"#d23636"});
-                    $("[name='email']").val("邮箱格式错误！！");//邮箱格式错误！！
-                    $("[name='email']").focus(function(){
-                       $("[name='email']").css({"border":"#f3f3f3 1px solid","color":"#333"});
-                       $("[name='email']").val("");
-                    });
-                }else if(data==-4){
-                    $("#np1").css({"display":"none"});
-                    $("#np11").css({"display":"block"});
-                    $("#np11").val("密码格式错误！！");//密码格式错误！！
-                    $("#np11").focus(function(){
-                        $("#np11").css({"display":"none"});
-                        $("#np1").css({"display":"block"});
-                        $("#np1").focus();
-                    });
-                }else if(data==-5){
-                    $("[name='uname']").css({"border":"#6DBD20 1px solid","color":"#6DBD20"});
-                    $("[name='uname']").val("账号已经注册成功无需重复提交！！");//账号已经注册成功无需重复提交！！
-                    $("[name='uname']").focus(function(){
-                       $("[name='uname']").css({"border":"#f3f3f3 1px solid","color":"#333"});
-                       $("[name='uname']").val("");
-                    });
-                }else{
-                    data=eval(data);
-                    $.post(
-                        "/index.php/Home/User/userLogin.html",
-                        {"user":data.mobile,"pwd":data.pwd},
-                        function(data){
-                            if(data==1){
-                                window.location.href="/index.php/Home/User/select.html";
-                            }else if(data==2){
-                                location.reload();
-                            }else if(data==-1){
-                                $("[name='user']").css({
-                                    "border":"#d23636 1px solid",
-                                    "color":"#d23636",
-                                    });
-                                $("[name='user']").val("用户名或密码错误！！");//用户名或密码错误！！
-                                $("[name='user']").focus(function(){
-                                   $("[name='user']").css({
-                                       "border":"#f3f3f3 1px solid",
-                                       "color":"#333"
-                                       });
-                                   $("[name='user']").val("");
-                                })
-                            }else if(data==-2){
-                                $("[name='user']").css({
-                                    "border":"#d23636 1px solid",
-                                    "color":"#d23636",
-                                    });
-                                $("[name='user']").val("请输入账号或密码！！");//请输入账号或密码！！
-                                $("[name='user']").focus(function(){
-                                    $("[name='user']").css({
-                                        "border":"#f3f3f3 1px solid",
-                                        "color":"#333"
-                                        });
-                                    $("[name='user']").val("");
-                                })
-                            }
-                        }   
-                    )
-                   
-                }
-            }
-        )
-    })
-
-    // 重置密码
-    $("#bpwdp").click(function(){
-        var iso = $("[name='iso1']").val();
-        var phone = $("[name='myphone']").val();
-        $.post(
-            "/index.php/Home/User/rpmsg.html",
-            {'phone':phone,'iso':iso},
-            function(data){
-                if(data==1){
-                    $("[name='myphone']").css({"border":"#6DBD20 1px solid","color":"#6DBD20"});
-                     $(".password-back-win").hide();
-                     $(".cover-body").hide();
-                    $("[name='myphone']").val("短信已发出！！");//短信已发出！！
-                }else if(data==-1){
-                    $("[name='myphone']").css({"border":"#d23636 1px solid","color":"#d23636"});
-                    $("[name='myphone']").val("发送失败！！");//发送失败！！
-                    $("[name='myphone']").focus(function(){
-                       $("[name='myphone']").css({"border":"#f3f3f3 1px solid","color":"#333"});
-                       $("[name='myphone']").val("");
-                    });
-                }else if(data==-2){
-                    $("[name='myphone']").css({"border":"#d23636 1px solid","color":"#d23636"});
-                    $("[name='myphone']").val("该账户不存在！！");//该账户不存在！！
-                    $("[name='myphone']").focus(function(){
-                       $("[name='myphone']").css({"border":"#f3f3f3 1px solid","color":"#333"});
-                       $("[name='myphone']").val("");
-                    });
-                }
-            }
-        )
-    })
-    $("#bpwde").click(function(){
-        var email = $("[name='myemail']").val();
-        $.post(
-            "/index.php/Home/User/rpemail.html",
-            {'mail':email},
-            function(data){
-                if(data==1){
-                    $("[name='myemail']").css({"border":"#6DBD20 1px solid","color":"#6DBD20"});
-                    $("[name='myemail']").val("邮件已发出！！");//邮件已发出！！
-                }else if(data==-1){
-                    $("[name='myemail']").css({"border":"#d23636 1px solid","color":"#d23636"});
-                    $("[name='myemail']").val("账户不存在或输入错误！！");//账户不存在或输入错误！！
-                    $("[name='myemail']").focus(function(){
-                       $("[name='myemail']").css({"border":"#f3f3f3 1px solid","color":"#333"});
-                       $("[name='myemail']").val("");
-                    });
-                }else{
-                    $("[name='myemail']").css({"border":"#d23636 1px solid","color":"#d23636"});
-                    $("[name='myemail']").val("邮件发送失败！！");//邮件发送失败！！
-                    $("[name='myemail']").focus(function(){
-                       $("[name='myemail']").css({"border":"#f3f3f3 1px solid","color":"#333"});
-                       $("[name='myemail']").val("");
-                    });
-                }
-            }
-        )
-    })
-</script>
+	<div class="oget">
+		TOP
+	</div>
+	<script type="text/javascript" src="js/jquery-1.8.3.js"></script>
+	<script type="text/javascript" src="js/cookiecj/jquery.cookie.js"></script>
+	<script type="text/javascript" src="js/mc.js"></script>
+	
 </body>
 </html>
